@@ -117,12 +117,6 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, List<O
         // create the 3D object
         Object3DData data3D = new Object3DData(wfl.getVerts(), wfl.getColorsVert(), wfl.getNormals(), wfl.getTextureCoordinates(), wfl.getFaces(),
                 wfl.getFaceMats(), wfl.getMaterials());
-        System.out.println("AAAA");
-        System.out.println("wfl = " + wfl);
-        System.out.println("wfl.getColorVert = " + wfl.getColorsVert());
-        System.out.println("buffer(3400) = " + wfl.getColorsVert().get(3400));
-        System.out.println("check = " + data3D.getColorVertsBuffer());
-        System.out.println("=" + Arrays.toString(data3D.getColor()));
         data3D.setId(modelId);
         data3D.setCurrentDir(currentDirectory);
         data3D.setAssetsDir(assetsDirectory);

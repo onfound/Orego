@@ -18,15 +18,17 @@ import utils.Tuple;
 
 /**
  * Created by ilyad on 03.04.2018.
+ *
  */
 
 public final class Materials {
 
-    public Map<String, Material> materials;
+
+    private Map<String, Material> materials;
 
     private String mfnm;
 
-    Materials(String mtlFnm) {
+    public Materials(String mtlFnm) {
         materials = new LinkedHashMap<>();
         this.mfnm = mtlFnm;
     }
@@ -130,7 +132,7 @@ public final class Materials {
         return null; // means an error occurred
     } // end of readTuple3()
 
-    void showMaterials()
+    public void showMaterials()
     // list all the Material objects
     {
         Log.i("WavefrontLoader", "No. of materials: " + materials.size());
@@ -142,8 +144,10 @@ public final class Materials {
         }
     } // end of showMaterials()
 
-    public Material getMaterial(String name) {
+    public Material getMaterialName(String name) {
         return materials.get(name);
     }
-
+    public Map<String, Material> getMaterials() {
+        return materials;
+    }
 }

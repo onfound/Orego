@@ -4,11 +4,12 @@ import android.opengl.GLES20;
 import android.opengl.Matrix;
 import android.util.Log;
 
+import org.orego.app.face3dActivity.model3D.services.wavefront.FaceMaterials;
+import org.orego.app.face3dActivity.model3D.services.wavefront.Faces;
+import org.orego.app.face3dActivity.model3D.services.wavefront.ModelDimensions;
 import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.FaceMaterials;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.Faces;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.Materials;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.Tuple3;
+import org.orego.app.face3dActivity.model3D.services.wavefront.materials.Materials;
+
 
 import java.io.File;
 import java.nio.FloatBuffer;
@@ -38,7 +39,7 @@ public class Object3DData {
     private FloatBuffer colorVertsBuffer = null;
     private FloatBuffer vertexNormalsBuffer = null;
     private IntBuffer drawOrderBuffer = null;
-    private ArrayList<Tuple3> texCoords;
+    private ArrayList<Tuple> texCoords;
     private Faces faces;
     private FaceMaterials faceMats;
     private Materials materials;
@@ -65,7 +66,7 @@ public class Object3DData {
 
 
     // Async Loader
-    private WavefrontLoader.ModelDimensions modelDimensions;
+    private ModelDimensions modelDimensions;
     private WavefrontLoader loader;
 
     public Object3DData(FloatBuffer vertexArrayBuffer) {
@@ -98,11 +99,11 @@ public class Object3DData {
         return loader;
     }
 
-    public void setDimensions(WavefrontLoader.ModelDimensions modelDimensions) {
+    public void setDimensions(ModelDimensions modelDimensions) {
         this.modelDimensions = modelDimensions;
     }
 
-    public WavefrontLoader.ModelDimensions getDimensions() {
+    public ModelDimensions getDimensions() {
         return modelDimensions;
     }
 
@@ -131,7 +132,7 @@ public class Object3DData {
                 color[i] = colorVertsBuffer.get(countColor * 3 + i);
             }
             countColor++;
-        }catch (Exception ignored){
+        } catch (Exception ignored) {
             System.out.println("NULL EXCEPTION");
         }
         return color;
@@ -268,7 +269,7 @@ public class Object3DData {
         return vertexNormalsBuffer;
     }
 
-    ArrayList<Tuple3> getTexCoords() {
+    ArrayList<Tuple> getTexCoords() {
         return texCoords;
     }
 
@@ -340,7 +341,7 @@ public class Object3DData {
         Log.i("Object3DData", "Scaling model with factor: " + scaleFactor + ". Largest: " + largest);
 
         // get the model's center point
-        Tuple3 center = modelDimensions.getCenter();
+        Tuple center = modelDimensions.getCenter();
         Log.i("Object3DData", "Objects actual position: " + center.toString());
 
         // modify the model's vertices
@@ -351,11 +352,11 @@ public class Object3DData {
             x0 = vertexBuffer.get(i * 3);
             y0 = vertexBuffer.get(i * 3 + 1);
             z0 = vertexBuffer.get(i * 3 + 2);
-            x = (x0 - center.getX()) * scaleFactor;
+            x = (x0 - (float) center.getX()) * scaleFactor;
             vertexBuffer.put(i * 3, x);
-            y = (y0 - center.getY()) * scaleFactor;
+            y = (y0 - (float) center.getY()) * scaleFactor;
             vertexBuffer.put(i * 3 + 1, y);
-            z = (z0 - center.getZ()) * scaleFactor;
+            z = (z0 - (float) center.getZ()) * scaleFactor;
             vertexBuffer.put(i * 3 + 2, z);
         }
     } // end of centerScale()

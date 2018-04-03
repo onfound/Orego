@@ -6,13 +6,13 @@ import android.opengl.GLES20;
 import android.util.Log;
 
 import org.apache.commons.io.IOUtils;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.FaceMaterials;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.Faces;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.Material;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.Materials;
-import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader.Tuple3;
+
 
 import org.orego.app.face3dActivity.model3D.services.suppliers.Object3DSupplierUtility;
+import org.orego.app.face3dActivity.model3D.services.wavefront.FaceMaterials;
+import org.orego.app.face3dActivity.model3D.services.wavefront.Faces;
+import org.orego.app.face3dActivity.model3D.services.wavefront.materials.Material;
+import org.orego.app.face3dActivity.model3D.services.wavefront.materials.Materials;
 import org.orego.app.face3dActivity.util.math.Math3DUtils;
 
 import java.io.ByteArrayOutputStream;
@@ -28,6 +28,8 @@ import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.List;
+
+import utils.Tuple;
 
 public final class Object3DBuilder {
 
@@ -194,7 +196,7 @@ public final class Object3DBuilder {
             float[] currentColor = DEFAULT_COLOR;
             for (int i = 0; i < faces.getSize(); i++) {
                 if (faceMats.findMaterial(i) != null) {
-                    Material mat = materials.getMaterial(faceMats.findMaterial(i));
+                    Material mat = materials.getMaterialName(faceMats.findMaterial(i));
                     if (mat != null) {
                         currentColor = mat.getKdColor() != null ? mat.getKdColor() : currentColor;
                         anyOk = anyOk || mat.getKdColor() != null;
@@ -214,9 +216,9 @@ public final class Object3DBuilder {
 
         String texture = null;
         byte[] textureData = null;
-        if (materials != null && !materials.materials.isEmpty()) {
+        if (materials != null && !materials.getMaterials().isEmpty()) {
 
-            for (Material mat : materials.materials.values()) {
+            for (Material mat : materials.getMaterials().values()) {
                 if (mat.getTexture() != null) {
                     texture = mat.getTexture();
                     break;
@@ -251,14 +253,14 @@ public final class Object3DBuilder {
 
 
         //if (textureData != null) {
-        ArrayList<Tuple3> texCoords = obj.getTexCoords();
+        ArrayList<Tuple> texCoords = obj.getTexCoords();
         if (texCoords != null && texCoords.size() > 0) {
 
             Log.i("Object3DBuilder", "Allocating/populating texture buffer...");
             FloatBuffer textureCoordsBuffer = createNativeByteBuffer(texCoords.size() * 2 * 4).asFloatBuffer();
-            for (Tuple3 texCor : texCoords) {
-                textureCoordsBuffer.put(texCor.getX());
-                textureCoordsBuffer.put(obj.isFlipTextCoords() ? 1 - texCor.getY() : texCor.getY());
+            for (Tuple texCor : texCoords) {
+                textureCoordsBuffer.put((float) texCor.getX());
+                textureCoordsBuffer.put(obj.isFlipTextCoords() ? 1 - (float) texCor.getY() : (float) texCor.getY());
             }
 
             Log.i("Object3DBuilder", "Populating texture array buffer...");
@@ -278,7 +280,7 @@ public final class Object3DBuilder {
                     if (!faceMats.isEmpty() && faceMats.findMaterial(i) != null) {
                         Material mat = null;
                         if (materials != null) {
-                            mat = materials.getMaterial(faceMats.findMaterial(i));
+                            mat = materials.getMaterialName(faceMats.findMaterial(i));
                         }
                         if (mat != null && mat.getTexture() != null) {
                             currentTexture = mat.getTexture();
