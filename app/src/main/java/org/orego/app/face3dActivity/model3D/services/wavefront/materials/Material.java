@@ -26,7 +26,7 @@ public final class Material {
         //alpha & shininess:
         this.d = 1.0f;
         this.ns = 0.0f;
-        
+
         this.textureFileName = null;
         this.texture = null;
     }
