@@ -1,0 +1,14 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#ffffff</color>
+	<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navigationback">#40CDFB</color>
+    <color name="navigationtext">#1C1C1E</color>
+	<color name="homeactback">#B4FFFA</color>
+    <color name="homecontback">#A0FFFA</color>
+    <color name="buttontryitback">#FED0C1</color>
+
+</resources>

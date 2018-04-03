@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "771720071106",
+    "firebase_url": "https://fastchat-730b8.firebaseio.com",
+    "project_id": "fastchat-730b8",
+    "storage_bucket": "fastchat-730b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771720071106:android:9f731b30a3f6c525",
+        "android_client_info": {
+          "package_name": "org.orego.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771720071106-pk0n2dl474dh56o0c02voejdo5q551f0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.orego.app",
+            "certificate_hash": "31a8a4a550cea478e67476d49b7f2c463498cdda"
+          }
+        },
+        {
+          "client_id": "771720071106-08seli0cd3iiffdmknkdrlr1t7b4dh13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt1ImiinWk1avMWwrmL9mj_jrhS9kKJOw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771720071106-08seli0cd3iiffdmknkdrlr1t7b4dh13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
