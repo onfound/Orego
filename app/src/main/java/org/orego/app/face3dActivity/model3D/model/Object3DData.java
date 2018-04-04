@@ -122,14 +122,17 @@ public class Object3DData {
     }
 
     public float[] getColor() {
-        try {
+        color = new float[3];
+        if (getColorVertsBuffer() != null) {
             for (int i = 0; i < 3; i++) {
                 color[i] = getColorVertsBuffer().get(countColor * 3 + i);
+                System.out.println(color[i]);
             }
             countColor++;
-        } catch (Exception ignored) {
-            System.out.println("NULL EXCEPTION");
-        }
+            if (countColor == getColorVertsBuffer().capacity()) {
+                countColor = 0;
+            }
+        } else System.out.println("getColor = null");
         return color;
     }
 
