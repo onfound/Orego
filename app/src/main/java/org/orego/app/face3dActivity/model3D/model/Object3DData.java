@@ -69,7 +69,7 @@ public class Object3DData {
     private ModelDimensions modelDimensions;
     private WavefrontLoader loader;
 
-    public Object3DData(FloatBuffer vertexArrayBuffer) {
+    Object3DData(FloatBuffer vertexArrayBuffer) {
         this.vertexArrayBuffer = vertexArrayBuffer;
         this.version = 1;
     }
@@ -81,12 +81,12 @@ public class Object3DData {
     public Object3DData(FloatBuffer verts, FloatBuffer colorVerts, FloatBuffer normals, ArrayList<Tuple> texCoords, Faces faces,
                         FaceMaterials faceMats, Materials materials) {
         super();
-        this.colorVertsBuffer = colorVerts;
-        this.vertexBuffer = verts;
-        this.vertexNormalsBuffer = normals;
-        this.texCoords = texCoords;
+        this.vertexBuffer = verts; //вершины
+        this.colorVertsBuffer = colorVerts; //цвета для вершин
+        this.vertexNormalsBuffer = normals; //буфер нормалей
+        this.texCoords = texCoords; //массив точек текстур
         this.faces = faces;  // parameter "faces" could be null in case of async loading
-        this.faceMats = faceMats;
+        this.faceMats = faceMats; // --> have map[indexFace, materials]
         this.materials = materials;
     }
 
@@ -102,11 +102,6 @@ public class Object3DData {
     public void setDimensions(ModelDimensions modelDimensions) {
         this.modelDimensions = modelDimensions;
     }
-
-    public ModelDimensions getDimensions() {
-        return modelDimensions;
-    }
-
 
     public int getVersion() {
         return version;
@@ -129,7 +124,7 @@ public class Object3DData {
     public float[] getColor() {
         try {
             for (int i = 0; i < 3; i++) {
-                color[i] = colorVertsBuffer.get(countColor * 3 + i);
+                color[i] = getColorVertsBuffer().get(countColor * 3 + i);
             }
             countColor++;
         } catch (Exception ignored) {
@@ -359,6 +354,6 @@ public class Object3DData {
             z = (z0 - (float) center.getZ()) * scaleFactor;
             vertexBuffer.put(i * 3 + 2, z);
         }
-    } // end of centerScale()
+    }
 
 }

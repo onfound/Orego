@@ -7,7 +7,8 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
- * Created by ilyad on 03.04.2018.
+ * Created by ilya dolgushev on 03.04.2018.
+ *
  */
 
 public final class FaceMaterials {

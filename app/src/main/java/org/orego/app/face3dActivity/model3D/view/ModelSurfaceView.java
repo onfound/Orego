@@ -8,7 +8,7 @@ import org.orego.app.face3dActivity.model3D.controller.TouchController;
 
 
 @SuppressLint("ViewConstructor")
-public class ModelSurfaceView extends GLSurfaceView {
+public final class ModelSurfaceView extends GLSurfaceView {
 
 	private ModelActivity parent;
 	private TouchController touchHandler;

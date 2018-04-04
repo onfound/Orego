@@ -9,6 +9,7 @@ import org.orego.app.face3dActivity.model3D.util.GLUtil;
 
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -21,7 +22,7 @@ public abstract class Object3DImpl implements Object3D {
     private final float[] mvpMatrix = new float[16];
     // OpenGL data
     private final int mProgram;
-
+    private int count_i = 0;
     private double shift = -1d;
 
     Object3DImpl(String id, String vertexShaderCode, String fragmentShaderCode, String... variables) {
@@ -39,7 +40,7 @@ public abstract class Object3DImpl implements Object3D {
     @Override
     public void draw(Object3DData obj, float[] pMatrix, float[] vMatrix, int drawMode, int drawSize, int textureId,
                      float[] lightPos) {
-
+        System.out.println("color = " + obj.getColorVertsBuffer() + " vertArr = " + obj.getVertexBuffer());
         // Add program to OpenGL environment
         GLES20.glUseProgram(mProgram);
 
@@ -133,14 +134,12 @@ public abstract class Object3DImpl implements Object3D {
     }
 
     protected void setColor(Object3DData obj) {
-
         // get handle to fragment shader's vColor member
         int mColorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
-
-
         // Set color for drawing the triangle
-        float[] color = obj.getColor() != null ? obj.getColor() : DEFAULT_COLOR;
-        System.out.println("TEST_COLORS" + color[0]);
+        float[] color;
+        color = obj.getColor() != null ? obj.getColor() : DEFAULT_COLOR;
+
         GLES20.glUniform4fv(mColorHandle, 1, color, 0);
 
     }

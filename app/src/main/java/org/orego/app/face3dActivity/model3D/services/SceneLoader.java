@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SceneLoader {
+public final class SceneLoader {
 
     protected final ModelActivity parent;
 

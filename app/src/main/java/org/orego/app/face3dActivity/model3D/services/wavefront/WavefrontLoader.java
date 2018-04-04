@@ -36,7 +36,6 @@ public final class WavefrontLoader {
 
     // metadata
     private int numVerts = 0;
-    private int numTextures = 0;
     private int numNormals = 0;
     private int numFaces = 0;
 
@@ -44,7 +43,6 @@ public final class WavefrontLoader {
     private FloatBuffer vertsBuffer;
     private FloatBuffer normalsBuffer;
     private FloatBuffer colorVerts;
-    private FloatBuffer textureCoordsBuffer;
 
     public WavefrontLoader() {
         textureCoordinates = new ArrayList<>();
@@ -55,20 +53,16 @@ public final class WavefrontLoader {
     public void analyzeModel(InputStream is) {
         int lineNum = 0;
         String line;
-
         BufferedReader br = null;
         try {
             br = new BufferedReader(new InputStreamReader(is));
-
             while ((line = br.readLine()) != null) {
                 lineNum++;
                 line = line.trim();
                 if (line.length() > 0) {
-
                     if (line.startsWith("v ")) { // vertex
                         numVerts++;
                     } else if (line.startsWith("vt")) { // tex coord
-                        numTextures++;
                     } else if (line.startsWith("vn")) {// normal
                         numNormals++;
                     } else if (line.startsWith("f ")) { // face
@@ -79,7 +73,6 @@ public final class WavefrontLoader {
                             faceSize = line.split(" ").length - 1;
                         }
                         numFaces += (faceSize - 2);
-                        // (faceSize-2)x3 = converting polygon to triangles
                     } else if (line.startsWith("mtllib ")) // build material
                     {
                         materials = new Materials(line.substring(7));
@@ -100,7 +93,6 @@ public final class WavefrontLoader {
                 }
             }
         }
-
         Log.i("WavefrontLoader", "Number of vertices:" + numVerts);
         Log.i("WavefrontLoader", "Number of faces:" + numFaces);
     }
@@ -113,7 +105,6 @@ public final class WavefrontLoader {
         if (numNormals > 0) {
             normalsBuffer = createNativeByteBuffer(numNormals * 3 * 4).asFloatBuffer();
         }
-        textureCoordsBuffer = createNativeByteBuffer(numTextures * 3 * 4).asFloatBuffer();
         if (numFaces > 0) {
             IntBuffer buffer = createNativeByteBuffer(numFaces * 3 * 4).asIntBuffer();
             faces = new Faces(numFaces, buffer);
@@ -139,16 +130,12 @@ public final class WavefrontLoader {
     }
 
     private static ByteBuffer createNativeByteBuffer(int length) {
-        // initialize vertex byte buffer for shape coordinates
         ByteBuffer bb = ByteBuffer.allocateDirect(length);
-        // use the device hardware's native byte order
         bb.order(ByteOrder.nativeOrder());
         return bb;
     }
 
-    private void readModel(BufferedReader br)
-    // parse the OBJ file line-by-line
-    {
+    private void readModel(BufferedReader br) {
         boolean isLoaded = true; // hope things will go okay
 
         int lineNum = 0;
@@ -156,11 +143,8 @@ public final class WavefrontLoader {
         boolean isFirstCoord = true;
         boolean isFirstTC = true;
         int numFaces = 0;
-
         int vertNumber = 0;
         int normalNumber = 0;
-
-
         try {
             while (((line = br.readLine()) != null)) {
                 lineNum++;
@@ -193,14 +177,11 @@ public final class WavefrontLoader {
 
         if (!isLoaded) {
             Log.e("WavefrontLoader", "Error loading model");
-            // throw new RuntimeException("Error loading model");
         }
-    } // end of readModel()
+    }
 
-    private boolean addVert(FloatBuffer buffer, FloatBuffer colorsBuffer, int offset, String line, boolean isFirstCoord, ModelDimensions dimensions)
-    /*
-     * Add vertex from line "v x y z R G B" to vert ArrayList, and update the model dimension's info.
-	 */ {
+    private boolean addVert(FloatBuffer buffer, FloatBuffer colorsBuffer, int offset, String line
+            , boolean isFirstCoord, ModelDimensions dimensions){
         float x = 0, y = 0, z = 0, r = 0, g = 0, b = 0;
         try {
             String[] tokens;
@@ -228,13 +209,12 @@ public final class WavefrontLoader {
         } catch (NumberFormatException ex) {
             Log.e("WavefrontLoader", ex.getMessage());
         } finally {
-            // try to build even with errors
             buffer.put(offset, x).put(offset + 1, y).put(offset + 2, z);
             colorsBuffer.put(offset, r).put(offset + 1, g).put(offset + 2, b);
         }
 
         return false;
-    } // end of addVert()
+    }
 
     private boolean addTexCoord(String line, boolean isFirstTC)
     /*
@@ -253,15 +233,12 @@ public final class WavefrontLoader {
         }
 
         return false;
-    } // end of addTexCoord()
+    }
 
-    private boolean checkTC3D(String line)
-    /*
-     * Check if the line has 4 tokens, which will be the "vt" token and 3 tex coords in this case.
-	 */ {
+    private boolean checkTC3D(String line){
         String[] tokens = line.split("\\s+");
         return (tokens.length == 4);
-    } // end of checkTC3D()
+    }
 
     private Tuple<Float, Float, Float> readTCTuple(String line)
     /*
@@ -284,22 +261,21 @@ public final class WavefrontLoader {
         }
 
         return null; // means an error occurred
-    } // end of readTCTuple()
+    }
 
     public void reportOnModel() {
         Log.i("WavefrontLoader", "No. of vertices: " + vertsBuffer.capacity() / 3);
+        Log.i("WavefrontLoader", "No. of vertexColors " + colorVerts.capacity() / 3);
         Log.i("WavefrontLoader", "No. of normal coords: " + numNormals);
         Log.i("WavefrontLoader", "No. of tex coords: " + textureCoordinates.size());
         Log.i("WavefrontLoader", "No. of faces: " + numFaces);
 
         modelDims.reportDimensions();
-        // dimensions of model (before centering and scaling)
 
         if (materials != null)
-            materials.showMaterials(); // list defined materials
-        faceMats.showUsedMaterials(); // show what materials have been used by
-        // faces
-    } // end of reportOnModel()
+            materials.showMaterials();
+        faceMats.showUsedMaterials();
+    }
 
     public FloatBuffer getColorsVert() {
         return colorVerts;
@@ -333,4 +309,4 @@ public final class WavefrontLoader {
         return modelDims;
     }
 
-} // end of WavefrontLoader class
+}

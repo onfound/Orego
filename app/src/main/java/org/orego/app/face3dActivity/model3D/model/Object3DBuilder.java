@@ -33,7 +33,6 @@ import utils.Tuple;
 
 public final class Object3DBuilder {
 
-
     public interface Callback {
 
         void onLoadError(Exception ex);
@@ -323,6 +322,7 @@ public final class Object3DBuilder {
             }
         }
         obj.setTextureData(textureData);
+
 
     }
 

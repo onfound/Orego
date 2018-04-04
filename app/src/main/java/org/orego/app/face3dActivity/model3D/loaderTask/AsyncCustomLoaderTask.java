@@ -63,7 +63,7 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, List<O
     @Override
     protected final List<Object3DData> doInBackground(final Void... params) {
         try {
-            final List<Object3DData> data = build();
+            final List<Object3DData> data = build(); // инициализируем хранение объекта в DATA
             callback.onLoadComplete(data);
             build(data);
             return data;
@@ -91,12 +91,13 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, List<O
         }
     }
 
-    private void closeStream(InputStream stream) {
-        if (stream == null) return;
-        try {
-            stream.close();
-        } catch (IOException ex) {
-            Log.e("AsyncCustomLoaderTask", "Problem closing stream: " + ex.getMessage(), ex);
+    private void closeStream(final InputStream stream) {
+        if (stream != null){
+            try {
+                stream.close();
+            } catch (IOException ex) {
+                Log.e("AsyncCustomLoaderTask", "Problem closing stream: " + ex.getMessage(), ex);
+            }
         }
     }
 
@@ -106,40 +107,39 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, List<O
 
         // allocate memory
         publishProgress(0);
-        wfl.analyzeModel(inputStreamObj);
+        wfl.analyzeModel(inputStreamObj); // считаем кол-во всего в файле для иничиализации
         closeStream(inputStreamObj);
 
-        // Allocate memory
+        // Allocate memory. Initializing buffers [00..0] report about parsing.
         publishProgress(1);
-        wfl.allocateBuffers();
-        wfl.reportOnModel();
+        wfl.allocateBuffers(); // initialize
+        wfl.reportOnModel(); //sout report model
 
         // create the 3D object
-        Object3DData data3D = new Object3DData(wfl.getVerts(), wfl.getColorsVert(), wfl.getNormals(), wfl.getTextureCoordinates(), wfl.getFaces(),
-                wfl.getFaceMats(), wfl.getMaterials());
-        data3D.setId(modelId);
-        data3D.setCurrentDir(currentDirectory);
-        data3D.setAssetsDir(assetsDirectory);
-        data3D.setLoader(wfl);
-        data3D.setDrawMode(GLES20.GL_TRIANGLES);
-        data3D.setDimensions(data3D.getLoader().getDimensions());
-
+        Object3DData data3D = new Object3DData(wfl.getVerts(), wfl.getColorsVert(), wfl.getNormals()
+                , wfl.getTextureCoordinates(), wfl.getFaces(), wfl.getFaceMats(), wfl.getMaterials());
+        data3D.setId(modelId); //помещаем в класс хранения хранения названия модели
+        data3D.setCurrentDir(currentDirectory); // храним также текущую директорию
+        data3D.setAssetsDir(assetsDirectory); // храним директорию assets
+        data3D.setLoader(wfl); // кладем туда загрузчик-парсер
+        data3D.setDrawMode(GLES20.GL_TRIANGLES); // храним режим рисования треугольников
+        data3D.setDimensions(wfl.getDimensions()); // храним размеры нашего объекта
         return Collections.singletonList(data3D);
     }
 
     private void build(List<Object3DData> datas) throws Exception {
         InputStream stream = getInputStream();
         try {
-            Object3DData data = datas.get(0);
+            Object3DData data = datas.get(0); // полчили наш ящик с объектом
 
             // parse model
             publishProgress(2);
-            data.getLoader().loadModel(stream);
+            data.getLoader().loadModel(stream); // wfl.loadModel
             closeStream(stream);
 
             // scale object
             publishProgress(3);
-            data.centerScale();
+            data.centerScale(); // add Data vertex
             data.setScale(new float[]{5, 5, 5});
 
             // draw triangles instead of points

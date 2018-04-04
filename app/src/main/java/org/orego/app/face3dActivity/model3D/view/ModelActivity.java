@@ -29,7 +29,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 
-public class ModelActivity extends Activity {
+public final class ModelActivity extends Activity {
 
     private static final int REQUEST_CODE_OPEN_FILE = 1000;
 
@@ -40,6 +40,7 @@ public class ModelActivity extends Activity {
     private float[] backgroundColor = new float[]{0.25f, 0.8f, 1.0f, 0.98f};
 
     private ArrayList<String> models;
+
     private int count;
 
     private ModelSurfaceView gLView;
@@ -55,7 +56,7 @@ public class ModelActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Try to get input parameters
-        Bundle b = getIntent().getExtras();
+        final Bundle b = getIntent().getExtras();
         if (b != null) {
             this.paramAssetDir = b.getString("assetDir");
             this.paramAssetFilename = b.getString("assetFilename");

@@ -5,14 +5,15 @@ import java.text.DecimalFormat;
 import utils.Tuple;
 
 /**
- * Created by ilyad on 03.04.2018.
+ * Created by ilya dolgushev on 03.04.2018.
+ *
  */
 
 public final class ModelDimensions {
     // edge coordinates
-    float leftPt, rightPt; // on x-axis
-    float topPt, bottomPt; // on y-axis
-    float farPt, nearPt; // on z-axis
+    private float leftPt, rightPt; // on x-axis
+    private float topPt, bottomPt; // on y-axis
+    private float farPt, nearPt; // on z-axis
 
     // for reporting
     private DecimalFormat df = new DecimalFormat("0.##"); // 2 dp
@@ -68,7 +69,7 @@ public final class ModelDimensions {
         return (topPt - bottomPt);
     }
 
-    float getDepth() {
+    private float getDepth() {
         return (nearPt - farPt);
     }
 
@@ -84,15 +85,15 @@ public final class ModelDimensions {
         return largest;
     }
 
-    public Tuple getCenter() {
+    public Tuple<Float, Float, Float> getCenter() {
         float xc = (rightPt + leftPt) / 2.0f;
         float yc = (topPt + bottomPt) / 2.0f;
         float zc = (nearPt + farPt) / 2.0f;
-        return new Tuple(xc, yc, zc);
+        return new Tuple<>(xc, yc, zc);
     }
 
     void reportDimensions() {
-        Tuple center = getCenter();
+        Tuple<Float, Float, Float> center = getCenter();
 
         System.out.println("x Coords: " + df.format(leftPt) + " to " + df.format(rightPt));
         System.out.println("  Mid: " + df.format(center.getX()) + "; Width: " + df.format(getWidth()));
