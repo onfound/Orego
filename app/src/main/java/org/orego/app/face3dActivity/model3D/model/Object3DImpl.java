@@ -9,7 +9,6 @@ import org.orego.app.face3dActivity.model3D.util.GLUtil;
 
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -22,7 +21,6 @@ public abstract class Object3DImpl implements Object3D {
     private final float[] mvpMatrix = new float[16];
     // OpenGL data
     private final int mProgram;
-    private int count_i = 0;
     private double shift = -1d;
 
     Object3DImpl(String id, String vertexShaderCode, String fragmentShaderCode, String... variables) {
@@ -174,8 +172,6 @@ public abstract class Object3DImpl implements Object3D {
         vertexBuffer.position(0);
         GLES20.glVertexAttribPointer(mPositionHandle, COORDS_PER_VERTEX, GLES20.GL_FLOAT, false, VERTEX_STRIDE,
                 vertexBuffer);
-
-
         return mPositionHandle;
     }
 
@@ -341,11 +337,11 @@ class Object3DV1 extends Object3DImpl {
 
     private final static String vertexShaderCode =
             "uniform mat4 u_MVPMatrix;" +
-                    "attribute vec4 a_Position;" +
-                    "void main() {" +
-                    "  gl_Position = u_MVPMatrix * a_Position;\n" +
-                    "  gl_PointSize = 20.0;  \n" +
-                    "}";
+            "attribute vec4 a_Position;" +
+            "void main() {" +
+            "  gl_Position = u_MVPMatrix * a_Position;\n" +
+            "  gl_PointSize = 20.0;  \n" +
+            "}";
     private final static String fragmentShaderCode =
             "precision mediump float;" +
                     "uniform vec4 vColor;" +

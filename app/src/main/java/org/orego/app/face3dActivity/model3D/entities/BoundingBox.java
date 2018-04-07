@@ -1,8 +1,5 @@
 package org.orego.app.face3dActivity.model3D.entities;
 
-import android.opengl.Matrix;
-import java.nio.FloatBuffer;
-
 public final class BoundingBox {
 
     private final String id;
@@ -12,42 +9,6 @@ public final class BoundingBox {
     private final float yMax;
     private final float zMin;
     private final float zMax;
-    private final float[] min;
-    private final float[] max;
-
-    public static BoundingBox create(String id, FloatBuffer vertexBuffer, float[] modelMatrix) {
-        float xMin = Float.MAX_VALUE, xMax = Float.MIN_VALUE, yMin = Float.MAX_VALUE, yMax = Float.MIN_VALUE, zMin = Float.MAX_VALUE, zMax = Float.MIN_VALUE;
-        vertexBuffer = vertexBuffer.asReadOnlyBuffer();
-        vertexBuffer.position(0);
-        while (vertexBuffer.hasRemaining()) {
-            float vertexx = vertexBuffer.get();
-            float vertexy = vertexBuffer.get();
-            float vertexz = vertexBuffer.get();
-            if (vertexx < xMin) {
-                xMin = vertexx;
-            }
-            if (vertexx > xMax) {
-                xMax = vertexx;
-            }
-            if (vertexy < yMin) {
-                yMin = vertexy;
-            }
-            if (vertexy > yMax) {
-                yMax = vertexy;
-            }
-            if (vertexz < zMin) {
-                zMin = vertexz;
-            }
-            if (vertexz > zMax) {
-                zMax = vertexz;
-            }
-        }
-        float[] min = new float[]{xMin, yMin, zMin, 1};
-        float[] max = new float[]{xMax, yMax, zMax, 1};
-        Matrix.multiplyMV(min,0,modelMatrix,0,min,0);
-        Matrix.multiplyMV(max,0,modelMatrix,0,max,0);
-        return new BoundingBox(id, min[0], max[0], min[1], max[1], min[2], max[2]);
-    }
 
     BoundingBox(String id, float xMin, float xMax, float yMin, float yMax, float zMin, float zMax) {
         this.id = id;
@@ -57,14 +18,8 @@ public final class BoundingBox {
         this.yMax = yMax;
         this.zMin = zMin;
         this.zMax = zMax;
-        this.min = new float[]{xMin, yMin, zMin, 1};
-        this.max = new float[]{xMax, yMax, zMax, 1};
     }
 
-
-    public float[] getMax() {
-        return max;
-    }
 
     private float getxMin() {
         return xMin;

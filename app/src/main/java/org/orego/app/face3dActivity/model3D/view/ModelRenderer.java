@@ -96,7 +96,7 @@ public class ModelRenderer implements GLSurfaceView.Renderer {
 
     @Override
     public void onDrawFrame(GL10 unused) {
-        System.out.println("onDrawFrame");
+
         // Draw background color
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT | GLES20.GL_DEPTH_BUFFER_BIT);
 
@@ -130,8 +130,6 @@ public class ModelRenderer implements GLSurfaceView.Renderer {
             Matrix.multiplyMV(lightPosInEyeSpace, 0, lightModelViewMatrix, 0, scene.getLightPosition(), 0);
 
             // Draw a point that represents the light bulb
-            System.out.println("Рисуем свет");
-            System.out.println(lightBulbDrawer.getClass().getSimpleName());
             lightBulbDrawer.draw(scene.getLightBulb(), modelProjectionMatrix, modelViewMatrix, -1, lightPosInEyeSpace);
         }
 
@@ -142,7 +140,6 @@ public class ModelRenderer implements GLSurfaceView.Renderer {
                 objData = objects.get(i);
 
                 Object3D drawerObject = drawer.getDrawer(objData, scene.isDrawTextures(), scene.isDrawLighting());
-                System.out.println(drawerObject.getClass().getSimpleName());
                 // Log.d("ModelRenderer","Drawing object using '"+drawerObject.getClass()+"'");
 
                 Integer textureId = textures.get(objData.getTextureData());
@@ -152,13 +149,11 @@ public class ModelRenderer implements GLSurfaceView.Renderer {
                     textureIs.close();
                     textures.put(objData.getTextureData(), textureId);
                 } else if (scene.isDrawPoints() || objData.getFaces() == null || !objData.getFaces().loaded()) {
-                    System.out.println("Рисуем хз");
                     drawerObject.draw(objData, modelProjectionMatrix, modelViewMatrix
                             , GLES20.GL_POINTS, objData.getDrawSize(),
                             textureId != null ? textureId : -1, lightPosInEyeSpace);
 
                 } else {
-                    System.out.println("Рисуем объект");
                     drawerObject.draw(objData, modelProjectionMatrix, modelViewMatrix,
                             textureId != null ? textureId : -1, lightPosInEyeSpace);
 
