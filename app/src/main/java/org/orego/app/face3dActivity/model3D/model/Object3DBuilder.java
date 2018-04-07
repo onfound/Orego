@@ -341,25 +341,17 @@ public final class Object3DBuilder {
         return bb;
     }
 
-    public static void loadV6AsyncParallel(final Activity parent, final URL url, final File file, final String assetsDir, final String assetName,
+    public static void loadV6AsyncParallel(final Activity parent, final File file, final String assetsDir, final String assetName,
                                            final Callback callback) {
-
-        final String modelId = file != null ? file.getName() : assetName;
-
-        Log.i("Object3DBuilder", "Loading model " + modelId + ". async and parallel..");
-        if (modelId.toLowerCase().endsWith(".obj")) {
-            loadV6AsyncParallel_Obj(parent, file, assetsDir, assetName, callback);
-        }
-    }
-
-
-    private static void loadV6AsyncParallel_Obj(final Activity parent, final File file, final String assetsDir, final String assetName,
-                                                final Callback callback) {
 
         final String modelId = file != null ? file.getName() : assetName;
         final File currentDir = file != null ? file.getParentFile() : null;
 
         Log.i("Object3DBuilder", "Loading model " + modelId + ". async and parallel..");
-        Object3DSupplierUtility.supplyAsync(parent, currentDir, assetsDir, modelId, callback);
+        if (modelId.toLowerCase().endsWith(".obj")) {
+            Object3DSupplierUtility.supplyAsync(parent, currentDir, assetsDir, modelId, callback);
+        }
     }
+
+
 }

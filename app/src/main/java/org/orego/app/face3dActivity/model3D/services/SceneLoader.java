@@ -45,8 +45,6 @@ public final class SceneLoader {
 
     private final Object3DData lightPoint = Object3DBuilder.buildPoint(lightPosition).setId("light");
 
-    private boolean hidden;
-
     public SceneLoader(ModelActivity main) {
         this.parent = main;
     }
@@ -55,56 +53,37 @@ public final class SceneLoader {
 
         // Load object
         if (parent.getParamFile() != null || parent.getParamAssetDir() != null) {
-
-            // Initialize assets url handler
             Handler.assets = parent.getAssets();
-            // Handler.classLoader = parent.getClassLoader(); (optional)
-            // Handler.androidResources = parent.getResources(); (optional)
 
-            // Create asset url
-            final URL url;
-            try {
-                if (parent.getParamFile() != null) {
-                    url = parent.getParamFile().toURI().toURL();
-                } else {
-                    url = new URL("android://org.orego.dddmodel2/assets/" + parent.getParamAssetDir() + File.separator + parent.getParamAssetFilename());
+            Object3DBuilder.loadV6AsyncParallel(parent, parent.getParamFile(), parent.getParamAssetDir(),
+                    parent.getParamAssetFilename(), new Callback() {
 
-                }
-            } catch (MalformedURLException e) {
-                Log.e("SceneLoader", e.getMessage(), e);
-                throw new RuntimeException(e);
-            }
-            if (!hidden) {
-                Object3DBuilder.loadV6AsyncParallel(parent, url, parent.getParamFile(), parent.getParamAssetDir(),
-                        parent.getParamAssetFilename(), new Callback() {
+                        long startTime = SystemClock.uptimeMillis();
 
-                            long startTime = SystemClock.uptimeMillis();
-
-                            @Override
-                            public void onBuildComplete(List<Object3DData> datas) {
-                                for (Object3DData data : datas) {
-                                    loadTexture(data, parent.getParamFile(), parent.getParamAssetDir());
-                                }
-                                final String elapsed = (SystemClock.uptimeMillis() - startTime) / 1000 + " secs";
-                                makeToastText("Load complete (" + elapsed + ")", Toast.LENGTH_LONG);
+                        @Override
+                        public void onBuildComplete(List<Object3DData> datas) {
+                            for (Object3DData data : datas) {
+                                loadTexture(data, parent.getParamFile(), parent.getParamAssetDir());
                             }
+                            final String elapsed = (SystemClock.uptimeMillis() - startTime) / 1000 + " secs";
+                            makeToastText("Load complete (" + elapsed + ")", Toast.LENGTH_LONG);
+                        }
 
-                            @Override
-                            public void onLoadComplete(List<Object3DData> datas) {
-                                for (Object3DData data : datas) {
-                                    addObject(data);
-                                }
+                        @Override
+                        public void onLoadComplete(List<Object3DData> datas) {
+                            for (Object3DData data : datas) {
+                                addObject(data);
                             }
+                        }
 
-                            @Override
-                            public void onLoadError(Exception ex) {
-                                Log.e("SceneLoader", ex.getMessage(), ex);
-                                Toast.makeText(parent.getApplicationContext(),
-                                        "There was a problem building the model: " + ex.getMessage(), Toast.LENGTH_LONG)
-                                        .show();
-                            }
-                        });
-            }
+                        @Override
+                        public void onLoadError(Exception ex) {
+                            Log.e("SceneLoader", ex.getMessage(), ex);
+                            Toast.makeText(parent.getApplicationContext(),
+                                    "There was a problem building the model: " + ex.getMessage(), Toast.LENGTH_LONG)
+                                    .show();
+                        }
+                    });
         }
     }
 
@@ -133,7 +112,6 @@ public final class SceneLoader {
 
     private void animateLight() {
         if (!rotatingLight) return;
-
         // animate light - Do a complete rotation every 5 seconds.
         long time = SystemClock.uptimeMillis() % 5000L;
         float angleInDegrees = (360.0f / 5000.0f) * ((int) time);

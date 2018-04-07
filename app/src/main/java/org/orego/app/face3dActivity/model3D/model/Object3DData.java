@@ -38,6 +38,7 @@ public class Object3DData {
     private FloatBuffer vertexBuffer = null;
     private FloatBuffer colorVertsBuffer = null;
     private FloatBuffer vertexNormalsBuffer = null;
+    private FloatBuffer colorPerVerts = null;
     private IntBuffer drawOrderBuffer = null;
     private ArrayList<Tuple> texCoords;
     private Faces faces;
@@ -74,15 +75,16 @@ public class Object3DData {
         this.version = 1;
     }
 
-    public FloatBuffer getColorVertsBuffer() {
+    FloatBuffer getColorVertsBuffer() {
         return colorVertsBuffer;
     }
 
-    public Object3DData(FloatBuffer verts, FloatBuffer colorVerts, FloatBuffer normals, ArrayList<Tuple> texCoords, Faces faces,
+    public Object3DData(FloatBuffer verts, FloatBuffer colorVerts, FloatBuffer colorPerVerts, FloatBuffer normals, ArrayList<Tuple> texCoords, Faces faces,
                         FaceMaterials faceMats, Materials materials) {
         super();
         this.vertexBuffer = verts; //вершины
         this.colorVertsBuffer = colorVerts; //цвета для вершин
+        this.colorPerVerts = colorPerVerts;
         this.vertexNormalsBuffer = normals; //буфер нормалей
         this.texCoords = texCoords; //массив точек текстур
         this.faces = faces;  // parameter "faces" could be null in case of async loading
@@ -122,17 +124,17 @@ public class Object3DData {
     }
 
     public float[] getColor() {
-        color = new float[3];
+        color = new float[4];
         if (getColorVertsBuffer() != null) {
-            for (int i = 0; i < 3; i++) {
-                color[i] = getColorVertsBuffer().get(countColor * 3 + i);
-                System.out.println(color[i]);
+            for (int i = 0; i < 4; i++) {
+                if (i != 3) color[i] = getColorVertsBuffer().get(countColor * 3 + i);
+                else color[i] = 1.0f;
             }
             countColor++;
             if (countColor == getColorVertsBuffer().capacity()) {
                 countColor = 0;
             }
-        } else System.out.println("getColor = null");
+        }
         return color;
     }
 
@@ -359,4 +361,7 @@ public class Object3DData {
         }
     }
 
+    public FloatBuffer getColorPerVerts() {
+        return colorPerVerts;
+    }
 }

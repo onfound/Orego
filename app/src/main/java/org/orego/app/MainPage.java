@@ -23,6 +23,6 @@ public class MainPage extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        }, 2 * 750);
+        }, 100);
     }
 }

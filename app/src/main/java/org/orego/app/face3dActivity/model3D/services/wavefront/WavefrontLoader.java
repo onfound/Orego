@@ -43,6 +43,7 @@ public final class WavefrontLoader {
     private FloatBuffer vertsBuffer;
     private FloatBuffer normalsBuffer;
     private FloatBuffer colorVerts;
+    private FloatBuffer colorPerVerts;
 
     public WavefrontLoader() {
         textureCoordinates = new ArrayList<>();
@@ -102,6 +103,7 @@ public final class WavefrontLoader {
         // size = 3 (x,y,z) * 4 (bytes per float)
         vertsBuffer = createNativeByteBuffer(numVerts * 3 * 4).asFloatBuffer();
         colorVerts = createNativeByteBuffer(numVerts * 3 * 4).asFloatBuffer();
+        colorPerVerts = createNativeByteBuffer(numVerts * 6 * 4).asFloatBuffer();
         if (numNormals > 0) {
             normalsBuffer = createNativeByteBuffer(numNormals * 3 * 4).asFloatBuffer();
         }
@@ -152,7 +154,7 @@ public final class WavefrontLoader {
                 if (line.length() > 0) {
 
                     if (line.startsWith("v ")) { // vertex
-                        isLoaded = addVert(vertsBuffer, colorVerts, vertNumber++ * 3, line, isFirstCoord, modelDims) && isLoaded;
+                        isLoaded = addVert(vertsBuffer, colorVerts, colorPerVerts, vertNumber * 3, vertNumber++ * 6, line, isFirstCoord, modelDims) && isLoaded;
                         if (isFirstCoord)
                             isFirstCoord = false;
                     } else if (line.startsWith("vt")) { // tex coord
@@ -160,7 +162,7 @@ public final class WavefrontLoader {
                         if (isFirstTC)
                             isFirstTC = false;
                     } else if (line.startsWith("vn")) // normal
-                        isLoaded = addVert(normalsBuffer, colorVerts, normalNumber++ * 3, line, isFirstCoord, null) && isLoaded;
+                        isLoaded = addVert(normalsBuffer, colorVerts, colorPerVerts, normalNumber * 3, normalNumber++ * 6, line, isFirstCoord, null) && isLoaded;
                     else if (line.startsWith("f ")) { // face
                         isLoaded = faces.addFace(line) && isLoaded;
                         numFaces++;
@@ -180,8 +182,8 @@ public final class WavefrontLoader {
         }
     }
 
-    private boolean addVert(FloatBuffer buffer, FloatBuffer colorsBuffer, int offset, String line
-            , boolean isFirstCoord, ModelDimensions dimensions){
+    private boolean addVert(FloatBuffer buffer, FloatBuffer colorsBuffer, FloatBuffer colorPerVerts, int offset, int offsetColorPerVerts, String line
+            , boolean isFirstCoord, ModelDimensions dimensions) {
         float x = 0, y = 0, z = 0, r = 0, g = 0, b = 0;
         try {
             String[] tokens;
@@ -211,6 +213,9 @@ public final class WavefrontLoader {
         } finally {
             buffer.put(offset, x).put(offset + 1, y).put(offset + 2, z);
             colorsBuffer.put(offset, r).put(offset + 1, g).put(offset + 2, b);
+            colorPerVerts.put(offsetColorPerVerts, x).put(offsetColorPerVerts + 1, x)
+                    .put(offsetColorPerVerts + 2, x).put(offsetColorPerVerts + 3, x)
+                    .put(offsetColorPerVerts + 4, x).put(offsetColorPerVerts + 5, x);
         }
 
         return false;
@@ -235,7 +240,7 @@ public final class WavefrontLoader {
         return false;
     }
 
-    private boolean checkTC3D(String line){
+    private boolean checkTC3D(String line) {
         String[] tokens = line.split("\\s+");
         return (tokens.length == 4);
     }
@@ -309,4 +314,7 @@ public final class WavefrontLoader {
         return modelDims;
     }
 
+    public FloatBuffer getColorPerVerts() {
+        return colorPerVerts;
+    }
 }

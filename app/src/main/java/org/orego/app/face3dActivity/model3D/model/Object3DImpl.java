@@ -40,9 +40,6 @@ public abstract class Object3DImpl implements Object3D {
     @Override
     public void draw(Object3DData obj, float[] pMatrix, float[] vMatrix, int drawMode, int drawSize, int textureId,
                      float[] lightPos) {
-        System.out.println("color = " + obj.getColorVertsBuffer() + " vertArr = " + obj.getVertexBuffer());
-        if (obj.getColorVertsBuffer() != null && obj.getVertexBuffer()!=null)
-            System.out.println("color = " + obj.getColorVertsBuffer().get(456) + " vertArr = " + obj.getVertexBuffer().get(456));
         // Add program to OpenGL environment
         GLES20.glUseProgram(mProgram);
 
@@ -141,7 +138,6 @@ public abstract class Object3DImpl implements Object3D {
         // Set color for drawing the triangle
         float[] color;
         color = obj.getColor() != null ? obj.getColor() : DEFAULT_COLOR;
-        System.out.println(Arrays.toString(color));
         GLES20.glUniform4fv(mColorHandle, 1, color, 0);
 
     }
