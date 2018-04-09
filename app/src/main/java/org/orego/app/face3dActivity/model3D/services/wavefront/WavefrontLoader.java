@@ -317,4 +317,8 @@ public final class WavefrontLoader {
     public FloatBuffer getColorPerVerts() {
         return colorPerVerts;
     }
+
+    public int getNumVerts() {
+        return numVerts;
+    }
 }

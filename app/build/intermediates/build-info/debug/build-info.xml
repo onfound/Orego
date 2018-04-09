@@ -5,27 +5,27 @@
     build-mode="COLD"
     density="xhdpi"
     format="10"
-    ir-eligibility="FIELD_REMOVED"
+    ir-eligibility="FIELD_TYPE_CHANGE"
     plugin-version="3.0.1"
-    timestamp="1523115899686"
+    timestamp="1523299391769"
     token="2754251712739254391"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="718" />
+        duration="592" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="44" />
+        duration="17" />
     <task
         name="verifier"
-        duration="33" />
+        duration="4" />
 
     <artifact
-        location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
         location="D:\android-3D-model-viewer-master\app\build\outputs\apk\debug\app-debug.apk"
@@ -33,7 +33,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1523114446514"
+        timestamp="1523299032708"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -66,40 +66,28 @@
             location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
             location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1523115253247"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1523115777036"
+        timestamp="1523299307319"
         verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
         <artifact
             location="D:\android-3D-model-viewer-master\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="FIELD_REMOVED"
-        timestamp="1523115899686"
+        ir-eligibility="FIELD_TYPE_CHANGE"
+        timestamp="1523299391769"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="D:\android-3D-model-viewer-master\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="D:\android-3D-model-viewer-master\app\build\outputs\apk\debug\app-debug.apk"

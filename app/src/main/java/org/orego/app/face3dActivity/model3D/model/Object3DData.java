@@ -35,7 +35,7 @@ public class Object3DData {
     private int drawMode = GLES20.GL_POINTS;
 
     // Model data
-    private FloatBuffer vertexBuffer = null;
+    private FloatBuffer vertexBuffer = null; // без повторов count Vertex * 3(xyz) * 4 (bytes float)
     private FloatBuffer colorVertsBuffer = null;
     private FloatBuffer vertexNormalsBuffer = null;
     private FloatBuffer colorPerVerts = null;
@@ -47,7 +47,7 @@ public class Object3DData {
     private String textureFile;
 
     // Processed arrays
-    private FloatBuffer vertexArrayBuffer = null;
+    private FloatBuffer vertexArrayBuffer = null; // faces.getSize (triangle) * 3 (vertex) * 3(xyz) * 4 (bytes float)
     private FloatBuffer vertexColorsArrayBuffer = null;
     private FloatBuffer vertexNormalsArrayBuffer = null;
     private FloatBuffer textureCoordsArrayBuffer = null;
@@ -75,7 +75,7 @@ public class Object3DData {
         this.version = 1;
     }
 
-    FloatBuffer getColorVertsBuffer() {
+    private FloatBuffer getColorVertsBuffer() {
         return colorVertsBuffer;
     }
 
