@@ -48,6 +48,7 @@ public class Object3DData {
 
     // Processed arrays
     private FloatBuffer vertexArrayBuffer = null; // faces.getSize (triangle) * 3 (vertex) * 3(xyz) * 4 (bytes float)
+    private FloatBuffer colorPerVertexArrayBuffer = null;
     private FloatBuffer vertexColorsArrayBuffer = null;
     private FloatBuffer vertexNormalsArrayBuffer = null;
     private FloatBuffer textureCoordsArrayBuffer = null;
@@ -75,7 +76,7 @@ public class Object3DData {
         this.version = 1;
     }
 
-    private FloatBuffer getColorVertsBuffer() {
+    public FloatBuffer getColorVertsBuffer() {
         return colorVertsBuffer;
     }
 
@@ -294,6 +295,9 @@ public class Object3DData {
     FloatBuffer getVertexArrayBuffer() {
         return vertexArrayBuffer;
     }
+    FloatBuffer getColorPerVertexArrayBuffer(){
+        return colorPerVertexArrayBuffer;
+    }
 
     void setVertexArrayBuffer(FloatBuffer vertexArrayBuffer) {
         this.vertexArrayBuffer = vertexArrayBuffer;
@@ -363,5 +367,10 @@ public class Object3DData {
 
     public FloatBuffer getColorPerVerts() {
         return colorPerVerts;
+    }
+
+    public void setColorPerVertexArrayBuffer(FloatBuffer colorPerVertexArrayBuffer){
+
+        this.colorPerVertexArrayBuffer = colorPerVertexArrayBuffer;
     }
 }

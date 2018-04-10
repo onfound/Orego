@@ -41,6 +41,7 @@ public abstract class Object3DImpl implements Object3D {
                      float[] lightPos) {
         GLES20.glUseProgram(mProgram);
 
+
         float[] mMatrix = getMMatrix(obj);
         float[] mvMatrix = getMvMatrix(mMatrix, vMatrix);
         float[] mvpMatrix = getMvpMatrix(mvMatrix, pMatrix);
@@ -56,10 +57,18 @@ public abstract class Object3DImpl implements Object3D {
         GLES20.glVertexAttribPointer(vertexHandle, COORDS_PER_VERTEX, GLES20.GL_FLOAT, false, VERTEX_STRIDE, vertexBuffer1);
 
 
-        int colorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
-        GLES20.glEnableVertexAttribArray(colorHandle);
-        GLES20.glUniform4fv(colorHandle, 1, DEFAULT_COLOR, 0);
+        if (obj.getVertexBuffer() != null && obj.getLoader().getColorsVert() != null) {
+            FloatBuffer colorBuffer = obj.getColorPerVertexArrayBuffer() != null ? obj.getColorPerVertexArrayBuffer() : obj.getColorVertsBuffer(); // rgba
 
+            int colorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
+            GLES20.glEnableVertexAttribArray(colorHandle);
+            GLES20.glUniform4fv(colorHandle, 1, colorBuffer);
+
+        } else {
+            int colorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
+            GLES20.glEnableVertexAttribArray(colorHandle);
+            GLES20.glUniform4fv(colorHandle, 1, DEFAULT_COLOR, 0); // посмотреть на offset
+        }
 
         int mNormalHandle = -1;
         if (supportsNormals()) {
@@ -103,6 +112,7 @@ public abstract class Object3DImpl implements Object3D {
         if (mNormalHandle != -1) {
             GLES20.glDisableVertexAttribArray(mNormalHandle);
         }
+
     }
 
     public float[] getMMatrix(Object3DData obj) {
@@ -454,6 +464,7 @@ class Object3DV7 extends Object3DImpl {
                     "attribute vec3 a_Normal;\n" +
                     // calculated color
                     "varying vec4 v_Color;\n" +
+                    "varying vec4 v_Colors;\n" +
                     "void main() {\n" +
                     // Transform the vertex into eye space.
                     "   vec3 modelViewVertex = vec3(u_MVMatrix * a_Position);\n          " +
@@ -472,13 +483,15 @@ class Object3DV7 extends Object3DImpl {
                     // Multiply the color by the illumination level. It will be interpolated across the triangle.
                     "   v_Color = vColor * diffuse;\n" +
                     "   v_Color[3] = vColor[3];" + // correct alpha
+
                     "  gl_Position = u_MVPMatrix * a_Position;\n" +
-                    "  gl_PointSize = 2.5;  \n" +
+                    "  gl_PointSize = 0.5;  \n" +
                     "}";
     private final static String fragmentShaderCode =
             "precision mediump float;\n" +
                     // calculated color
                     "varying vec4 v_Color;\n" +
+
                     "void main() {\n" +
                     "  gl_FragColor = v_Color;\n" +
                     "}";

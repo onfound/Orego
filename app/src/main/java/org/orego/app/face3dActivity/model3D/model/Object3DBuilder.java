@@ -115,16 +115,26 @@ public final class Object3DBuilder {
 
         Log.i("Object3DBuilder", "Allocating vertex array buffer... Vertices (" + faces.getVerticesReferencesCount() + ")");
         final FloatBuffer vertexArrayBuffer = createNativeByteBuffer(faces.getVerticesReferencesCount() * 3 * 4).asFloatBuffer();
+        System.out.println("ВАЖНО = " + vertexArrayBuffer.capacity());
+        final FloatBuffer colorPerVertexArrayBuffer = createNativeByteBuffer(faces.getVerticesReferencesCount() * 3 * 4 * 4 / 3).asFloatBuffer();
+        System.out.println("ВАЖНО!!! = " + colorPerVertexArrayBuffer.capacity());
         obj.setVertexArrayBuffer(vertexArrayBuffer);
+        obj.setColorPerVertexArrayBuffer(colorPerVertexArrayBuffer);
         obj.setDrawUsingArrays();
 
         Log.i("Object3DBuilder", "Populating vertex array...");
         final FloatBuffer vertexBuffer = obj.getVertexBuffer();
+        final FloatBuffer colorBuffer = obj.getColorVertsBuffer();
         final IntBuffer indexBuffer = faces.getIndexBuffer();
+        System.out.println("ВАЖНО 1 = " + vertexBuffer.capacity() );
+        System.out.println("ВАЖНО 2 = " + colorBuffer.capacity());
         for (int i = 0; i < faces.getVerticesReferencesCount(); i++) {
             vertexArrayBuffer.put(i * 3, vertexBuffer.get(indexBuffer.get(i) * 3));
+            colorPerVertexArrayBuffer.put(i * 3, colorBuffer.get(indexBuffer.get(i) * 3));
             vertexArrayBuffer.put(i * 3 + 1, vertexBuffer.get(indexBuffer.get(i) * 3 + 1));
+            colorPerVertexArrayBuffer.put(i * 3 + 1, colorBuffer.get(indexBuffer.get(i) * 3 + 1));
             vertexArrayBuffer.put(i * 3 + 2, vertexBuffer.get(indexBuffer.get(i) * 3 + 2));
+            colorPerVertexArrayBuffer.put(i * 3 + 2, colorBuffer.get(indexBuffer.get(i) * 3 + 2));
         }
 
         Log.i("Object3DBuilder", "Allocating vertex normals buffer... Total normals (" + faces.facesNormIdxs.size() + ")");
