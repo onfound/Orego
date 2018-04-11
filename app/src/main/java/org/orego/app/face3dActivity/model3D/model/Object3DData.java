@@ -12,6 +12,7 @@ import org.orego.app.face3dActivity.model3D.services.wavefront.materials.Materia
 
 
 import java.io.File;
+import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
@@ -37,6 +38,7 @@ public class Object3DData {
     // Model data
     private FloatBuffer vertexBuffer = null; // без повторов count Vertex * 3(xyz) * 4 (bytes float)
     private FloatBuffer colorVertsBuffer = null;
+    private FloatBuffer colorVertsBufferA = null;
     private FloatBuffer vertexNormalsBuffer = null;
     private FloatBuffer colorPerVerts = null;
     private IntBuffer drawOrderBuffer = null;
@@ -80,11 +82,12 @@ public class Object3DData {
         return colorVertsBuffer;
     }
 
-    public Object3DData(FloatBuffer verts, FloatBuffer colorVerts, FloatBuffer colorPerVerts, FloatBuffer normals, ArrayList<Tuple> texCoords, Faces faces,
+    public Object3DData(FloatBuffer verts, FloatBuffer colorVerts, FloatBuffer colorVertsA, FloatBuffer colorPerVerts, FloatBuffer normals, ArrayList<Tuple> texCoords, Faces faces,
                         FaceMaterials faceMats, Materials materials) {
         super();
         this.vertexBuffer = verts; //вершины
         this.colorVertsBuffer = colorVerts; //цвета для вершин
+        this.colorVertsBufferA = colorVertsA; //цвета для вершин
         this.colorPerVerts = colorPerVerts;
         this.vertexNormalsBuffer = normals; //буфер нормалей
         this.texCoords = texCoords; //массив точек текстур
@@ -125,11 +128,10 @@ public class Object3DData {
     }
 
     public float[] getColor() {
-        color = new float[4];
+        color = new float[3];
         if (getColorVertsBuffer() != null) {
-            for (int i = 0; i < 4; i++) {
-                if (i != 3) color[i] = getColorVertsBuffer().get(countColor * 3 + i);
-                else color[i] = 1.0f;
+            for (int i = 0; i < 3; i++) {
+                color[i] = getColorVertsBuffer().get(countColor * 3 + i);
             }
             countColor++;
             if (countColor == getColorVertsBuffer().capacity()) {
@@ -295,7 +297,8 @@ public class Object3DData {
     FloatBuffer getVertexArrayBuffer() {
         return vertexArrayBuffer;
     }
-    FloatBuffer getColorPerVertexArrayBuffer(){
+
+    FloatBuffer getColorPerVertexArrayBuffer() {
         return colorPerVertexArrayBuffer;
     }
 
@@ -369,8 +372,11 @@ public class Object3DData {
         return colorPerVerts;
     }
 
-    public void setColorPerVertexArrayBuffer(FloatBuffer colorPerVertexArrayBuffer){
-
+    public void setColorPerVertexArrayBuffer(FloatBuffer colorPerVertexArrayBuffer) {
         this.colorPerVertexArrayBuffer = colorPerVertexArrayBuffer;
+    }
+
+    public FloatBuffer getColorVertsBufferA() {
+        return colorVertsBufferA;
     }
 }

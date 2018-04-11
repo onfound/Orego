@@ -116,7 +116,7 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, List<O
         wfl.reportOnModel(); //sout report model
 
         // create the 3D object
-        Object3DData data3D = new Object3DData(wfl.getVerts(), wfl.getColorsVert()
+        Object3DData data3D = new Object3DData(wfl.getVerts(), wfl.getColorsVert(), wfl.getColorsVertA()
                 , wfl.getColorPerVerts(), wfl.getNormals(), wfl.getTextureCoordinates()
                 , wfl.getFaces(), wfl.getFaceMats(), wfl.getMaterials());
         data3D.setId(modelId); //помещаем в класс хранения хранения названия модели

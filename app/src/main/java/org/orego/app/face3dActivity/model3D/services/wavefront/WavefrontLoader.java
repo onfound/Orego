@@ -43,6 +43,7 @@ public final class WavefrontLoader {
     private FloatBuffer vertsBuffer;
     private FloatBuffer normalsBuffer;
     private FloatBuffer colorVerts;
+    private FloatBuffer colorVertsA;
     private FloatBuffer colorPerVerts;
 
     public WavefrontLoader() {
@@ -102,7 +103,8 @@ public final class WavefrontLoader {
     public void allocateBuffers() {
         // size = 3 (x,y,z) * 4 (bytes per float)
         vertsBuffer = createNativeByteBuffer(numVerts * 3 * 4).asFloatBuffer();
-        colorVerts = createNativeByteBuffer(numVerts * 4 * 4).asFloatBuffer();
+        colorVerts = createNativeByteBuffer(numVerts * 3 * 4).asFloatBuffer();
+        colorVertsA = createNativeByteBuffer(numVerts * 4 * 4).asFloatBuffer();
         colorPerVerts = createNativeByteBuffer(numVerts * 6 * 4).asFloatBuffer();
         if (numNormals > 0) {
             normalsBuffer = createNativeByteBuffer(numNormals * 3 * 4).asFloatBuffer();
@@ -212,7 +214,8 @@ public final class WavefrontLoader {
             Log.e("WavefrontLoader", ex.getMessage());
         } finally {
             buffer.put(offset, x).put(offset + 1, y).put(offset + 2, z);
-            colorsBuffer.put(offset1, r).put(offset1 + 1, g).put(offset1 + 2, b).put(offset1 + 3, 1.0f);
+            colorsBuffer.put(offset, r).put(offset + 1, g).put(offset + 2, b);
+            colorVertsA.put(offset1, r).put(offset1 + 1, g).put(offset1 + 2, b).put(offset1 + 3, 1.0f);
             colorPerVerts.put(offsetColorPerVerts, x).put(offsetColorPerVerts + 1, x)
                     .put(offsetColorPerVerts + 2, x).put(offsetColorPerVerts + 3, x)
                     .put(offsetColorPerVerts + 4, x).put(offsetColorPerVerts + 5, x);
@@ -284,6 +287,9 @@ public final class WavefrontLoader {
 
     public FloatBuffer getColorsVert() {
         return colorVerts;
+    }
+    public FloatBuffer getColorsVertA() {
+        return colorVertsA;
     }
 
     public FloatBuffer getVerts() {

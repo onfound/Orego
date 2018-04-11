@@ -1,4 +1,4 @@
-#Tue Apr 10 15:09:20 MSK 2018
+#Wed Apr 11 22:21:55 MSK 2018
 base.0=D\:\\android-3D-model-viewer-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 path.0=classes.dex
 renamed.0=classes.dex

@@ -3,15 +3,11 @@ package org.orego.app.face3dActivity.model3D.model;
 import android.opengl.GLES20;
 import android.opengl.Matrix;
 import android.os.SystemClock;
-import android.util.Log;
-
 import org.orego.app.face3dActivity.model3D.util.GLUtil;
 
+import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
-import java.nio.IntBuffer;
-import java.util.List;
 
-import javax.microedition.khronos.opengles.GL;
 
 
 public abstract class Object3DImpl implements Object3D {
@@ -41,35 +37,36 @@ public abstract class Object3DImpl implements Object3D {
                      float[] lightPos) {
         GLES20.glUseProgram(mProgram);
 
-
         float[] mMatrix = getMMatrix(obj);
         float[] mvMatrix = getMvMatrix(mMatrix, vMatrix);
         float[] mvpMatrix = getMvpMatrix(mvMatrix, pMatrix);
 
         setMvpMatrix(mvpMatrix);
 
+        //setPosition
         int vertexHandle = GLES20.glGetAttribLocation(mProgram, "a_Position");
-
         GLES20.glEnableVertexAttribArray(vertexHandle);
         FloatBuffer vertexBuffer1 = obj.getVertexArrayBuffer() != null ? obj.getVertexArrayBuffer()
                 : obj.getVertexBuffer();
         vertexBuffer1.position(0);
         GLES20.glVertexAttribPointer(vertexHandle, COORDS_PER_VERTEX, GLES20.GL_FLOAT, false, VERTEX_STRIDE, vertexBuffer1);
 
+        //setColors
+        if (obj.getVertexBuffer() != null && obj.getLoader().getColorsVertA() != null) {
+            FloatBuffer colorBuffer; // rgba
+            colorBuffer = obj.getColorPerVertexArrayBuffer() != null ? obj.getColorPerVertexArrayBuffer() : obj.getColorVertsBufferA();
 
-        if (obj.getVertexBuffer() != null && obj.getLoader().getColorsVert() != null) {
-            FloatBuffer colorBuffer = obj.getColorPerVertexArrayBuffer() != null ? obj.getColorPerVertexArrayBuffer() : obj.getColorVertsBuffer(); // rgba
-
-            int colorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
+            int colorHandle = GLES20.glGetAttribLocation(mProgram, "vColor");
             GLES20.glEnableVertexAttribArray(colorHandle);
-            GLES20.glUniform4fv(colorHandle, 1, colorBuffer);
-
+            GLES20.glVertexAttribPointer(colorHandle, 3, GLES20.GL_FLOAT, false, 16, colorBuffer);
         } else {
             int colorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
             GLES20.glEnableVertexAttribArray(colorHandle);
             GLES20.glUniform4fv(colorHandle, 1, DEFAULT_COLOR, 0); // посмотреть на offset
         }
 
+
+//        setNormals
         int mNormalHandle = -1;
         if (supportsNormals()) {
 
@@ -79,10 +76,10 @@ public abstract class Object3DImpl implements Object3D {
             FloatBuffer buffer = obj.getVertexNormalsArrayBuffer() != null ? obj.getVertexNormalsArrayBuffer() : obj.getNormals();
 
             buffer.position(0);
-            GLES20.glVertexAttribPointer(mNormalHandle, 3, GLES20.GL_FLOAT, false, 0, buffer);
+            GLES20.glVertexAttribPointer(mNormalHandle, 4, GLES20.GL_FLOAT, false, 0, buffer);
         }
 
-
+        // 
         if (supportsMvMatrix()) {
             setMvMatrix(mvMatrix);
         }
@@ -457,14 +454,13 @@ class Object3DV7 extends Object3DImpl {
             "uniform mat4 u_MVPMatrix;\n" +
                     "attribute vec4 a_Position;\n" +
                     // color
-                    "uniform vec4 vColor;\n" +
+                    "attribute vec4 vColor;\n" +
                     // light variables
                     "uniform mat4 u_MVMatrix;\n" +
                     "uniform vec3 u_LightPos;\n" +
                     "attribute vec3 a_Normal;\n" +
                     // calculated color
                     "varying vec4 v_Color;\n" +
-                    "varying vec4 v_Colors;\n" +
                     "void main() {\n" +
                     // Transform the vertex into eye space.
                     "   vec3 modelViewVertex = vec3(u_MVMatrix * a_Position);\n          " +
@@ -481,7 +477,7 @@ class Object3DV7 extends Object3DImpl {
                     //  Add ambient lighting
                     "  diffuse = diffuse + 0.5;" +
                     // Multiply the color by the illumination level. It will be interpolated across the triangle.
-                    "   v_Color = vColor * diffuse;\n" +
+                    "   v_Color = vColor;\n" +
                     "   v_Color[3] = vColor[3];" + // correct alpha
 
                     "  gl_Position = u_MVPMatrix * a_Position;\n" +
