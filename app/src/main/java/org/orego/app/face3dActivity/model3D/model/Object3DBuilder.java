@@ -2,7 +2,6 @@ package org.orego.app.face3dActivity.model3D.model;
 
 import android.app.Activity;
 import android.content.res.AssetManager;
-import android.opengl.GLES20;
 import android.util.Log;
 
 import org.apache.commons.io.IOUtils;
@@ -20,7 +19,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 import java.nio.BufferOverflowException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -45,59 +43,25 @@ public final class Object3DBuilder {
     private static float[] DEFAULT_COLOR = {1.0f, 1.0f, 1.0f, 1.0f};
 
     private Object3DV1 object3dv1;
-    private Object3DV2 object3dv2;
-    private Object3DV3 object3dv3;
-    private Object3DV4 object3dv4;
-    private Object3DV5 object3dv5;
-    private Object3DV6 object3dv6;
     private Object3DV7 object3dv7;
-    private Object3DV8 object3dv8;
+
 
     static {
         System.setProperty("java.protocol.handler.pkgs", "org.orego.app.face3dActivity.util.url|" + System.getProperty("java.protocol.handler.pkgs"));
         Log.i("Object3DBuilder", "java.protocol.handler.pkgs=" + System.getProperty("java.protocol.handler.pkgs"));
     }
 
-    public static Object3DData buildPoint(float[] point) {
-        return new Object3DData(createNativeByteBuffer(point.length * 4).asFloatBuffer().put(point))
-                .setDrawMode(GLES20.GL_POINTS).setId("Point");
-    }
+    public Object3D getDrawer(Object3DData obj) throws IOException {
 
-    public Object3D getDrawer(Object3DData obj, boolean usingTextures, boolean usingLights) throws IOException {
-
-        if (object3dv2 == null) {
+        if (object3dv7 == null) {
             object3dv1 = new Object3DV1();
-            object3dv2 = new Object3DV2();
-            object3dv3 = new Object3DV3();
-            object3dv4 = new Object3DV4();
-            object3dv5 = new Object3DV5();
-            object3dv6 = new Object3DV6();
             object3dv7 = new Object3DV7();
-            object3dv8 = new Object3DV8();
+
         }
 
-        if (usingTextures && usingLights && obj.getVertexColorsArrayBuffer() != null && obj.getTextureData() != null
-                && obj.getTextureCoordsArrayBuffer() != null && obj.getVertexNormalsArrayBuffer() != null
-                && obj.getVertexNormalsArrayBuffer() != null) {
-            return object3dv6;
-        } else if (usingTextures && usingLights && obj.getVertexColorsArrayBuffer() == null && obj.getTextureData() != null
-                && obj.getTextureCoordsArrayBuffer() != null && obj.getVertexNormalsArrayBuffer() != null
-                && obj.getVertexNormalsArrayBuffer() != null) {
-            return object3dv8;
-        } else if (usingLights && obj.getVertexColorsArrayBuffer() != null
-                && obj.getVertexNormalsArrayBuffer() != null) {
-            return object3dv5;
-        } else if (usingLights && (obj.getNormals() != null || obj.getVertexNormalsArrayBuffer() != null)) {
+        if ((obj.getNormals() != null || obj.getVertexNormalsArrayBuffer() != null)) {
             return object3dv7;
-        } else if (usingTextures && obj.getVertexColorsArrayBuffer() != null && obj.getTextureData() != null
-                && obj.getTextureCoordsArrayBuffer() != null) {
-            return object3dv4;
-        } else if (usingTextures && obj.getVertexColorsArrayBuffer() == null && obj.getTextureData() != null
-                && obj.getTextureCoordsArrayBuffer() != null) {
-            return object3dv3;
-        } else if (obj.getVertexColorsArrayBuffer() != null) {
-            return object3dv2;
-        } else {
+        } else{
             return object3dv1;
         }
     }
@@ -118,7 +82,6 @@ public final class Object3DBuilder {
         final FloatBuffer colorPerVertexArrayBuffer = createNativeByteBuffer(faces.getVerticesReferencesCount() * 4 * 4).asFloatBuffer();
         obj.setVertexArrayBuffer(vertexArrayBuffer);
         obj.setColorPerVertexArrayBuffer(colorPerVertexArrayBuffer);
-        obj.setDrawUsingArrays();
         Log.i("Object3DBuilder", "Populating vertex array...");
         final FloatBuffer vertexBuffer = obj.getVertexBuffer();
         final FloatBuffer colorBuffer = obj.getColorVertsBuffer();
@@ -132,13 +95,6 @@ public final class Object3DBuilder {
             colorPerVertexArrayBuffer.put(i * 4 + 2, colorBuffer.get(indexBuffer.get(i) * 3 + 2));
             colorPerVertexArrayBuffer.put(i * 4 + 3, 1.0f);
         }
-
-//        for (int i = 0; i < 100; i++) {
-//            System.out.println("r) " + colorPerVertexArrayBuffer.get(i * 4) + " " + "g) "
-//                    + colorPerVertexArrayBuffer.get(i * 4 + 1) + " b)"
-//                    + colorPerVertexArrayBuffer.get(i * 4 + 2) + " a)"
-//                    + colorPerVertexArrayBuffer.get(i*4+3));
-//        }
 
         Log.i("Object3DBuilder", "Allocating vertex normals buffer... Total normals (" + faces.facesNormIdxs.size() + ")");
         // Normals buffer size = Number_of_faces X 3 (vertices_per_face) X 3 (coords_per_normal) X 4 (bytes_per_float)
@@ -223,7 +179,7 @@ public final class Object3DBuilder {
                 colorArrayBuffer = null;
             }
         }
-        obj.setVertexColorsArrayBuffer(colorArrayBuffer);
+
 
 
         String texture = null;
@@ -277,7 +233,6 @@ public final class Object3DBuilder {
 
             Log.i("Object3DBuilder", "Populating texture array buffer...");
             FloatBuffer textureCoordsArraysBuffer = createNativeByteBuffer(2 * faces.getVerticesReferencesCount() * 4).asFloatBuffer();
-            obj.setTextureCoordsArrayBuffer(textureCoordsArraysBuffer);
 
             try {
 
@@ -337,13 +292,6 @@ public final class Object3DBuilder {
         obj.setTextureData(textureData);
 
 
-    }
-
-    public Object3D getPointDrawer() {
-        if (object3dv1 == null) {
-            object3dv1 = new Object3DV1();
-        }
-        return object3dv1;
     }
 
     private static ByteBuffer createNativeByteBuffer(int length) {

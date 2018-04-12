@@ -17,8 +17,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,16 +33,6 @@ public final class SceneLoader {
 
     private boolean drawBoundingBox = false;
 
-    private boolean drawTextures = true;
-
-    private boolean rotatingLight = true;
-
-    private boolean drawLighting = true;
-
-    private final float[] lightPosition = new float[]{0, 0, 6, 1};
-
-    private final Object3DData lightPoint = Object3DBuilder.buildPoint(lightPosition).setId("light");
-
     public SceneLoader(ModelActivity main) {
         this.parent = main;
     }
@@ -54,10 +42,8 @@ public final class SceneLoader {
         // Load object
         if (parent.getParamFile() != null || parent.getParamAssetDir() != null) {
             Handler.assets = parent.getAssets();
-
             Object3DBuilder.loadV6AsyncParallel(parent, parent.getParamFile(), parent.getParamAssetDir(),
                     parent.getParamAssetFilename(), new Callback() {
-
                         long startTime = SystemClock.uptimeMillis();
 
                         @Override
@@ -95,30 +81,7 @@ public final class SceneLoader {
         });
     }
 
-    public Object3DData getLightBulb() {
-        return lightPoint;
-    }
-
-    public float[] getLightPosition() {
-        return lightPosition;
-    }
-
-    /**
-     * Hook for animating the objects before the rendering
-     */
-    public void onDrawFrame() {
-        animateLight();
-    }
-
-    private void animateLight() {
-        if (!rotatingLight) return;
-        // animate light - Do a complete rotation every 5 seconds.
-        long time = SystemClock.uptimeMillis() % 5000L;
-        float angleInDegrees = (360.0f / 5000.0f) * ((int) time);
-        lightPoint.setRotationY(angleInDegrees);
-    }
-
-    synchronized void addObject(Object3DData obj) {
+    private synchronized void addObject(Object3DData obj) {
         List<Object3DData> newList = new ArrayList<>(objects);
         newList.add(obj);
         this.objects = newList;
@@ -157,31 +120,8 @@ public final class SceneLoader {
         requestRender();
     }
 
-    public void toggleTextures() {
-        this.drawTextures = !drawTextures;
-    }
-
-    public void toggleLighting() {
-        if (this.drawLighting && this.rotatingLight) {
-            this.rotatingLight = false;
-            makeToastText("Light stopped", Toast.LENGTH_SHORT);
-        } else if (this.drawLighting) {
-            this.drawLighting = false;
-            makeToastText("Lights off", Toast.LENGTH_SHORT);
-        } else {
-            this.drawLighting = true;
-            this.rotatingLight = true;
-            makeToastText("Light on", Toast.LENGTH_SHORT);
-        }
-        requestRender();
-    }
-
-    public boolean isDrawTextures() {
-        return drawTextures;
-    }
-
     public boolean isDrawLighting() {
-        return drawLighting;
+        return true;
     }
 
     private void loadTexture(Object3DData data, File file, String parentAssetsDir) {
@@ -203,24 +143,6 @@ public final class SceneLoader {
             } catch (IOException ex) {
                 makeToastText("Problem loading texture " + data.getTextureFile(), Toast.LENGTH_SHORT);
             }
-        }
-    }
-
-    public void loadTexture(URL path) {
-        if (objects.size() != 1) {
-            makeToastText("Unavailable", Toast.LENGTH_SHORT);
-            return;
-        }
-        try {
-            InputStream is = path.openStream();
-            ByteArrayOutputStream bos = new ByteArrayOutputStream();
-            IOUtils.copy(is, bos);
-            is.close();
-
-            Object3DData obj = objects.get(0);
-            obj.setTextureData(bos.toByteArray());
-        } catch (IOException ex) {
-            makeToastText("Problem loading texture: " + ex.getMessage(), Toast.LENGTH_SHORT);
         }
     }
 

@@ -10,13 +10,9 @@ import org.orego.app.face3dActivity.model3D.services.wavefront.ModelDimensions;
 import org.orego.app.face3dActivity.model3D.services.wavefront.WavefrontLoader;
 import org.orego.app.face3dActivity.model3D.services.wavefront.materials.Materials;
 
-
 import java.io.File;
-import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
-import java.nio.IntBuffer;
 import java.util.ArrayList;
-import java.util.List;
 
 import utils.Tuple;
 
@@ -28,10 +24,8 @@ public class Object3DData {
     private File currentDir;
     private String assetsDir;
     private String id;
-    private boolean drawUsingArrays = false;
 
     // Model data for the simplest object
-
     private float[] color;
     private int drawMode = GLES20.GL_POINTS;
 
@@ -40,8 +34,6 @@ public class Object3DData {
     private FloatBuffer colorVertsBuffer = null;
     private FloatBuffer colorVertsBufferA = null;
     private FloatBuffer vertexNormalsBuffer = null;
-    private FloatBuffer colorPerVerts = null;
-    private IntBuffer drawOrderBuffer = null;
     private ArrayList<Tuple> texCoords;
     private Faces faces;
     private FaceMaterials faceMats;
@@ -51,10 +43,7 @@ public class Object3DData {
     // Processed arrays
     private FloatBuffer vertexArrayBuffer = null; // faces.getSize (triangle) * 3 (vertex) * 3(xyz) * 4 (bytes float)
     private FloatBuffer colorPerVertexArrayBuffer = null;
-    private FloatBuffer vertexColorsArrayBuffer = null;
     private FloatBuffer vertexNormalsArrayBuffer = null;
-    private FloatBuffer textureCoordsArrayBuffer = null;
-    private List<int[]> drawModeList = null;
     private byte[] textureData = null;
 
     // Transformation data
@@ -68,27 +57,21 @@ public class Object3DData {
         Matrix.setIdentityM(modelMatrix, 0);
     }
 
-
     // Async Loader
     private ModelDimensions modelDimensions;
     private WavefrontLoader loader;
 
-    Object3DData(FloatBuffer vertexArrayBuffer) {
-        this.vertexArrayBuffer = vertexArrayBuffer;
-        this.version = 1;
-    }
-
-    public FloatBuffer getColorVertsBuffer() {
+    FloatBuffer getColorVertsBuffer() {
         return colorVertsBuffer;
     }
 
-    public Object3DData(FloatBuffer verts, FloatBuffer colorVerts, FloatBuffer colorVertsA, FloatBuffer colorPerVerts, FloatBuffer normals, ArrayList<Tuple> texCoords, Faces faces,
-                        FaceMaterials faceMats, Materials materials) {
+    public Object3DData(FloatBuffer verts, FloatBuffer colorVerts, FloatBuffer colorVertsA
+            , FloatBuffer normals, ArrayList<Tuple> texCoords, Faces faces, FaceMaterials faceMats
+            , Materials materials) {
         super();
         this.vertexBuffer = verts; //вершины
         this.colorVertsBuffer = colorVerts; //цвета для вершин
-        this.colorVertsBufferA = colorVertsA; //цвета для вершин
-        this.colorPerVerts = colorPerVerts;
+        this.colorVertsBufferA = colorVertsA; //цвета для вершин c альфа
         this.vertexNormalsBuffer = normals; //буфер нормалей
         this.texCoords = texCoords; //массив точек текстур
         this.faces = faces;  // parameter "faces" could be null in case of async loading
@@ -150,9 +133,8 @@ public class Object3DData {
         return drawMode;
     }
 
-    public Object3DData setDrawMode(int drawMode) {
+    public void setDrawMode(int drawMode) {
         this.drawMode = drawMode;
-        return this;
     }
 
     public int getDrawSize() {
@@ -222,11 +204,6 @@ public class Object3DData {
         return getScale()[2];
     }
 
-    public void setRotationY(float rotY) {
-        this.rotation[1] = rotY;
-        updateModelMatrix();
-    }
-
     private void updateModelMatrix() {
         Matrix.setIdentityM(modelMatrix, 0);
         Matrix.setRotateM(modelMatrix, 0, getRotationX(), 1, 0, 0);
@@ -234,10 +211,6 @@ public class Object3DData {
         Matrix.setRotateM(modelMatrix, 0, getRotationY(), 0, 0, 1);
         Matrix.scaleM(modelMatrix, 0, getScaleX(), getScaleY(), getScaleZ());
         Matrix.translateM(modelMatrix, 0, getPositionX(), getPositionY(), getPositionZ());
-    }
-
-    IntBuffer getDrawOrder() {
-        return drawOrderBuffer;
     }
 
     File getCurrentDir() {
@@ -256,16 +229,8 @@ public class Object3DData {
         return assetsDir;
     }
 
-    boolean isDrawUsingArrays() {
-        return drawUsingArrays;
-    }
-
     boolean isFlipTextCoords() {
         return true;
-    }
-
-    void setDrawUsingArrays() {
-        this.drawUsingArrays = true;
     }
 
     FloatBuffer getNormals() {
@@ -314,26 +279,6 @@ public class Object3DData {
         this.vertexNormalsArrayBuffer = vertexNormalsArrayBuffer;
     }
 
-    FloatBuffer getTextureCoordsArrayBuffer() {
-        return textureCoordsArrayBuffer;
-    }
-
-    void setTextureCoordsArrayBuffer(FloatBuffer textureCoordsArrayBuffer) {
-        this.textureCoordsArrayBuffer = textureCoordsArrayBuffer;
-    }
-
-    List<int[]> getDrawModeList() {
-        return drawModeList;
-    }
-
-    FloatBuffer getVertexColorsArrayBuffer() {
-        return vertexColorsArrayBuffer;
-    }
-
-    void setVertexColorsArrayBuffer(FloatBuffer vertexColorsArrayBuffer) {
-        this.vertexColorsArrayBuffer = vertexColorsArrayBuffer;
-    }
-
     public String getTextureFile() {
         return textureFile;
     }
@@ -342,7 +287,6 @@ public class Object3DData {
         // calculate a scale factor
         float scaleFactor = 1.0f;
         float largest = modelDimensions.getLargest();
-        // System.out.println("Largest dimension: " + largest);
         if (largest != 0.0f)
             scaleFactor = (1.0f / largest);
         Log.i("Object3DData", "Scaling model with factor: " + scaleFactor + ". Largest: " + largest);
@@ -368,15 +312,11 @@ public class Object3DData {
         }
     }
 
-    public FloatBuffer getColorPerVerts() {
-        return colorPerVerts;
-    }
-
-    public void setColorPerVertexArrayBuffer(FloatBuffer colorPerVertexArrayBuffer) {
+    void setColorPerVertexArrayBuffer(FloatBuffer colorPerVertexArrayBuffer) {
         this.colorPerVertexArrayBuffer = colorPerVertexArrayBuffer;
     }
 
-    public FloatBuffer getColorVertsBufferA() {
+    FloatBuffer getColorVertsBufferA() {
         return colorVertsBufferA;
     }
 }

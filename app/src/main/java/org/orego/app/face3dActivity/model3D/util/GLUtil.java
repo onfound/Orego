@@ -114,5 +114,4 @@ public final class GLUtil {
 
         return textureHandle[0];
     }
-
 }
