@@ -4,7 +4,7 @@
             "outputFile": "D:\\android-3D-model-viewer-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f766f0cdae0cccbc97c6d82d8d87ffae\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f2604008d0901a6fe8de8772021690ea\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\87123dc693e6be952c5359a5ff3ecfe0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\c12fd74183ff9a3f9a5eed6f5cade0cc\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,23,24,25,26,28,30,31,32,33,34,36,38,40,42,44,46,47,52,54,56,57,58,60,62,63,64,65,66,67,111,114,158,161,164,166,168,170,173,175,178,179,180,183,184,185,186,187,188,191,192,194,196,198,200,204,206,207,208,209,211,215,217,219,220,221,222,223,225,226,227,237,238,239,251,263,264,265,268,271,272,275,276,279,282",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-0.6.2.aar\\d66f0b7af1e895b39b7d252729ec50b8\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-0.6.2.aar\\884f68230ab872a297820e0ad6553765\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,16",
                         "startColumns": "4,4",

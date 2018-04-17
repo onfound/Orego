@@ -11,7 +11,7 @@ public class Camera {
 	public float xUp, yUp, zUp; // Up direction.
 
 
-	private final BoundingBox boundingBox = new BoundingBox("scene",-20,20,-20,20,-20,20);
+	private final BoundingBox boundingBox = new BoundingBox("scene",-20,10,-20,10,-20,10);
 
 	private float[] matrix = new float[16];
 	private float[] buffer = new float[12 + 12 + 16 + 16];
@@ -20,7 +20,7 @@ public class Camera {
 	private boolean changed = false;
 
 	public Camera() {
-		this(0, 0, 6, 0, 0, -1, 0, 1, 0);
+		this(0, 0, 6, 0, 0, -1, 0, -1, 0);
 	}
 
 	private Camera(float xPos, float yPos, float zPos, float xView, float yView, float zView, float xUp, float yUp,
@@ -35,8 +35,6 @@ public class Camera {
 		this.yUp = yUp;
 		this.zUp = zUp;
 	}
-
-
 
 	public synchronized void animate(){
 		if (lastAction == null || animationCounter == 0){

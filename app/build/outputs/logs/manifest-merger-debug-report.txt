@@ -1,51 +1,47 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-67:12
-INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-67:12
-INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-67:12
-INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-67:12
-MERGED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\5303bbd14cda93b360c603fadfea2850\AndroidManifest.xml:2:1-13:12
-MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:2:1-19:12
-MERGED from [com.firebaseui:firebase-ui-storage:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-storage-0.6.2.aar\d6ae913e96aeb9b913027ed80d3e05a9\AndroidManifest.xml:2:1-11:12
-MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:2:1-85:12
-MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f766f0cdae0cccbc97c6d82d8d87ffae\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\87123dc693e6be952c5359a5ff3ecfe0\AndroidManifest.xml:17:1-27:12
-MERGED from [com.github.hani-momanii:SuperNova-Emoji:1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\SuperNova-Emoji-1.0.aar\fc0173b5d88eac5c58458a7fb67e9c07\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-core-9.6.1.aar\9cfd071be2f28ac82afb02c48737a809\AndroidManifest.xml:2:1-6:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3952b8d83075dace3cd16ccb4082ee4a\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:21:1-39:12
-MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\c5b7df074c6dd452c6c0ee88acc58150\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\4f9c230d1bdb2ba83a6cffe0243f7186\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:16:1-34:12
-MERGED from [com.google.firebase:firebase-database:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-9.8.0.aar\38506c258ba8b689f571ab3f88bd9c18\AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\a014ecfaa406c60ed8c8756f206bcb00\AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:16:1-26:12
-MERGED from [com.google.firebase:firebase-storage:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.8.0.aar\b7bcdf56bc77733b7b1d69fdf75acda2\AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:16:1-29:12
-MERGED from [com.google.firebase:firebase-database-connection:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.8.0.aar\4308db5f47b0316d55d715b5e105879c\AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\fc43fdc4beb895e600d10d1dc34c542b\AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.firebase:firebase-auth-module:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.8.0.aar\cb1c08a526856e7e131a95859d88f7e1\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.8.0.aar\748c570ed48f1256283b7faece2383ad\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:16:1-51:12
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\58c5ba701bee04b5f241a54afb131bef\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.firebase:firebase-storage-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.8.0.aar\6ac20d4c36b8ff2cb5f8e1bf883e59c2\AndroidManifest.xml:2:1-4:12
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\35d590e67a8dc5b29cec411eeae11f68\AndroidManifest.xml:16:1-23:12
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\e27574dfd37036a322f26e17b02c03e8\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\f343a5104f1e59207b6e84c7fc528f03\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\9ce6ef2d358f59c1fe4f16ca7317da05\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\8737558800a39d580970d5d5b5f18690\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\1ddb300827d5f7ac3068a9ad81454d7f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\83f981e9eb5c56d45bf8ac7d8694fb64\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\69443b3bbc137d6a3eeb61d46f43e0d1\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\94c18efec97ffb28ca3e63453187717d\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\01221c7f9d19539988f02f0329d7a3ac\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\60f76d2f2eb96271e4ac0817be0a4efa\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\abf0b72ef3038c17779e4574f15a24f2\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-67:12
-INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-67:12
-INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-67:12
+ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-66:12
+MERGED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\e047947d4ea871c70dd92ce9c96c69a7\AndroidManifest.xml:2:1-13:12
+MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:2:1-19:12
+MERGED from [com.firebaseui:firebase-ui-storage:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-storage-0.6.2.aar\682ce17fb7c5765a5c9b8d905d50fc77\AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:2:1-85:12
+MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f2604008d0901a6fe8de8772021690ea\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\c12fd74183ff9a3f9a5eed6f5cade0cc\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f7e9a62e5a64a71032b577e148da9a1c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.hani-momanii:SuperNova-Emoji:1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\SuperNova-Emoji-1.0.aar\0e965d4b5bab61d23d01648ad3a6cfc7\AndroidManifest.xml:2:1-10:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:21:1-39:12
+MERGED from [com.google.firebase:firebase-database:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-9.8.0.aar\5af06da4102dbd4ed4df799497f2b906\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\96adec336fc491954b43c40522520af3\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.firebase:firebase-storage:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.8.0.aar\dde290c5ab860353a8fb5750b9ee1553\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-database-connection:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.8.0.aar\2cebf157a816eb051f601cffa952a04a\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\2829fa81c329f78b05a7410ec8796e1f\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-auth-module:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.8.0.aar\0e0196aab53d50bec72053ecada4a466\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.8.0.aar\9b6eab88fa8c6923fe359201f03cdca6\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\32e0172aa9f506b9b83f19524cb18b2d\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.firebase:firebase-storage-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.8.0.aar\c6ab2b2e29497de03cd8c59ee9491387\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\f065c424a5c337df35ef712768058008\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\25ecf9a732a014c6f94c1971346a4a74\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\b42054017453ace8d902e81902909957\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\0b425fe8b140a4e26949a8790721b1cf\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\9e404ff7166bea4bacca3cf19341dda0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\98f9180ac587b22f50c514cf8deb8134\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\34fdc9a641d4d3aca9007f8878cc9ecb\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\03bdb3057c44f568d62ac6b07e68daca\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\fb112abaa0cacb6f207af89356ff9e8f\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\7855cdeb6653e372bd6fac38a7448a7a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\02a6b2801da9e0b3bab6fcc5eed3d293\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\da111a535ab1b422e5ee526244c85bca\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\67bb5b57048ab52980f0c5832148532e\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\73cdc7fca9563c42c1850395e340e147\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:4:5-34
 		INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
@@ -68,111 +64,107 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:9:5-80
 	android:name
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:10:22-78
 uses-feature#0x00020000
-ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:11:5-13:35
+ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:12:5-14:35
 	android:glEsVersion
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:13:9-41
 	android:required
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:13:9-32
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:14:9-32
 application
-ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:15:5-65:19
-MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:13:5-17:19
-MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:13:5-17:19
-MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:12:5-83:19
-MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:12:5-83:19
-MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f766f0cdae0cccbc97c6d82d8d87ffae\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f766f0cdae0cccbc97c6d82d8d87ffae\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\87123dc693e6be952c5359a5ff3ecfe0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\87123dc693e6be952c5359a5ff3ecfe0\AndroidManifest.xml:25:5-20
-MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-core-9.6.1.aar\9cfd071be2f28ac82afb02c48737a809\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-core-9.6.1.aar\9cfd071be2f28ac82afb02c48737a809\AndroidManifest.xml:5:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3952b8d83075dace3cd16ccb4082ee4a\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3952b8d83075dace3cd16ccb4082ee4a\AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:28:5-37:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:28:5-37:19
-MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\c5b7df074c6dd452c6c0ee88acc58150\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\c5b7df074c6dd452c6c0ee88acc58150\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\4f9c230d1bdb2ba83a6cffe0243f7186\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\4f9c230d1bdb2ba83a6cffe0243f7186\AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\a014ecfaa406c60ed8c8756f206bcb00\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\a014ecfaa406c60ed8c8756f206bcb00\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\fc43fdc4beb895e600d10d1dc34c542b\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\fc43fdc4beb895e600d10d1dc34c542b\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:28:5-50:19
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:28:5-50:19
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\58c5ba701bee04b5f241a54afb131bef\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\58c5ba701bee04b5f241a54afb131bef\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\35d590e67a8dc5b29cec411eeae11f68\AndroidManifest.xml:19:5-21:19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\35d590e67a8dc5b29cec411eeae11f68\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\e27574dfd37036a322f26e17b02c03e8\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\e27574dfd37036a322f26e17b02c03e8\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\f343a5104f1e59207b6e84c7fc528f03\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\f343a5104f1e59207b6e84c7fc528f03\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\9ce6ef2d358f59c1fe4f16ca7317da05\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\9ce6ef2d358f59c1fe4f16ca7317da05\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\8737558800a39d580970d5d5b5f18690\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\8737558800a39d580970d5d5b5f18690\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\83f981e9eb5c56d45bf8ac7d8694fb64\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\83f981e9eb5c56d45bf8ac7d8694fb64\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\69443b3bbc137d6a3eeb61d46f43e0d1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\69443b3bbc137d6a3eeb61d46f43e0d1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\94c18efec97ffb28ca3e63453187717d\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\94c18efec97ffb28ca3e63453187717d\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\01221c7f9d19539988f02f0329d7a3ac\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\01221c7f9d19539988f02f0329d7a3ac\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\60f76d2f2eb96271e4ac0817be0a4efa\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\60f76d2f2eb96271e4ac0817be0a4efa\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\abf0b72ef3038c17779e4574f15a24f2\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\abf0b72ef3038c17779e4574f15a24f2\AndroidManifest.xml:22:5-20
+ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:16:5-64:19
+MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:13:5-17:19
+MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:13:5-17:19
+MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:12:5-83:19
+MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:12:5-83:19
+MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f2604008d0901a6fe8de8772021690ea\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f2604008d0901a6fe8de8772021690ea\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\c12fd74183ff9a3f9a5eed6f5cade0cc\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\c12fd74183ff9a3f9a5eed6f5cade0cc\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f7e9a62e5a64a71032b577e148da9a1c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f7e9a62e5a64a71032b577e148da9a1c\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:28:5-37:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:28:5-37:19
+MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\96adec336fc491954b43c40522520af3\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\96adec336fc491954b43c40522520af3\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\2829fa81c329f78b05a7410ec8796e1f\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\2829fa81c329f78b05a7410ec8796e1f\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\32e0172aa9f506b9b83f19524cb18b2d\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\32e0172aa9f506b9b83f19524cb18b2d\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\f065c424a5c337df35ef712768058008\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\f065c424a5c337df35ef712768058008\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\25ecf9a732a014c6f94c1971346a4a74\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\25ecf9a732a014c6f94c1971346a4a74\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\b42054017453ace8d902e81902909957\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\b42054017453ace8d902e81902909957\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\0b425fe8b140a4e26949a8790721b1cf\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\0b425fe8b140a4e26949a8790721b1cf\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\9e404ff7166bea4bacca3cf19341dda0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\9e404ff7166bea4bacca3cf19341dda0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\98f9180ac587b22f50c514cf8deb8134\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\98f9180ac587b22f50c514cf8deb8134\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\34fdc9a641d4d3aca9007f8878cc9ecb\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\34fdc9a641d4d3aca9007f8878cc9ecb\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\03bdb3057c44f568d62ac6b07e68daca\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\03bdb3057c44f568d62ac6b07e68daca\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\fb112abaa0cacb6f207af89356ff9e8f\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\fb112abaa0cacb6f207af89356ff9e8f\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\02a6b2801da9e0b3bab6fcc5eed3d293\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\02a6b2801da9e0b3bab6fcc5eed3d293\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\da111a535ab1b422e5ee526244c85bca\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\da111a535ab1b422e5ee526244c85bca\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\67bb5b57048ab52980f0c5832148532e\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\67bb5b57048ab52980f0c5832148532e\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\73cdc7fca9563c42c1850395e340e147\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\73cdc7fca9563c42c1850395e340e147\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:18:9-41
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:19:9-41
 	android:icon
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:17:9-45
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:18:9-45
 	android:allowBackup
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:20:9-40
 activity#org.orego.app.face3dActivity.model3D.view.DemoActivity
-ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:21:9-26:20
+ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:22:9-26:53
 	android:screenOrientation
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:22:13-49
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:25:13-49
 	android:label
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:24:13-56
 	tools:targetApi
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:25:13-41
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:26:13-41
 	android:name
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:23:13-82
 activity#org.orego.app.face3dActivity.model3D.view.ModelActivity
 ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:27:9-35:20
 	android:screenOrientation
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:30:13-49
 	android:label
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:30:13-57
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:29:13-57
 	tools:targetApi
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:32:13-41
 	android:name
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:29:13-83
-activity#org.orego.app.MainPage
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:28:13-83
+activity#org.orego.app.Orego
 ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:36:9-46:20
 	android:screenOrientation
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:37:13-49
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:39:13-49
 	android:label
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:39:13-61
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:38:13-61
 	android:theme
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:38:13-50
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:37:13-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
 ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:42:17-69
@@ -183,121 +175,113 @@ ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:44
 	android:name
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:44:27-74
 activity#org.orego.app.homeActivity.Home
-ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:47:3-52:20
+ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:47:9-51:68
 	android:screenOrientation
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:48:13-49
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:50:13-49
 	android:label
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:50:13-41
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:49:13-41
 	android:theme
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:51:13-56
 	android:name
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:49:13-59
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:48:13-59
 activity#org.orego.app.takePictureActivity.TakePicture
-ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:53:9-57:59
+ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:52:9-56:59
 	android:screenOrientation
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:54:13-49
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:55:13-49
 	android:label
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:56:13-48
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:54:13-48
 	android:theme
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:57:13-56
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:56:13-56
 	android:name
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:55:13-73
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:53:13-73
 activity#org.orego.app.chatActivity.WriteToTheMaster
-ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:58:9-64:20
+ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:57:9-63:20
 	android:screenOrientation
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:59:13-49
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:60:13-49
 	android:label
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:61:13-53
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:59:13-53
 	android:theme
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:62:13-56
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:61:13-56
 	android:name
-		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:60:13-71
+		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml:58:13-71
 uses-sdk
 INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
 INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
-MERGED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\5303bbd14cda93b360c603fadfea2850\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\5303bbd14cda93b360c603fadfea2850\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-storage:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-storage-0.6.2.aar\d6ae913e96aeb9b913027ed80d3e05a9\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-storage:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-storage-0.6.2.aar\d6ae913e96aeb9b913027ed80d3e05a9\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:8:5-10:41
-MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f766f0cdae0cccbc97c6d82d8d87ffae\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f766f0cdae0cccbc97c6d82d8d87ffae\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\87123dc693e6be952c5359a5ff3ecfe0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\87123dc693e6be952c5359a5ff3ecfe0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.github.hani-momanii:SuperNova-Emoji:1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\SuperNova-Emoji-1.0.aar\fc0173b5d88eac5c58458a7fb67e9c07\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.hani-momanii:SuperNova-Emoji:1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\SuperNova-Emoji-1.0.aar\fc0173b5d88eac5c58458a7fb67e9c07\AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-core-9.6.1.aar\9cfd071be2f28ac82afb02c48737a809\AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-core-9.6.1.aar\9cfd071be2f28ac82afb02c48737a809\AndroidManifest.xml:4:5-42
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3952b8d83075dace3cd16ccb4082ee4a\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3952b8d83075dace3cd16ccb4082ee4a\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\c5b7df074c6dd452c6c0ee88acc58150\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\c5b7df074c6dd452c6c0ee88acc58150\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\4f9c230d1bdb2ba83a6cffe0243f7186\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\4f9c230d1bdb2ba83a6cffe0243f7186\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-database:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-9.8.0.aar\38506c258ba8b689f571ab3f88bd9c18\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-database:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-9.8.0.aar\38506c258ba8b689f571ab3f88bd9c18\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\a014ecfaa406c60ed8c8756f206bcb00\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\a014ecfaa406c60ed8c8756f206bcb00\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-storage:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.8.0.aar\b7bcdf56bc77733b7b1d69fdf75acda2\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-storage:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.8.0.aar\b7bcdf56bc77733b7b1d69fdf75acda2\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-database-connection:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.8.0.aar\4308db5f47b0316d55d715b5e105879c\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-database-connection:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.8.0.aar\4308db5f47b0316d55d715b5e105879c\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\fc43fdc4beb895e600d10d1dc34c542b\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\fc43fdc4beb895e600d10d1dc34c542b\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-auth-module:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.8.0.aar\cb1c08a526856e7e131a95859d88f7e1\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-auth-module:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.8.0.aar\cb1c08a526856e7e131a95859d88f7e1\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.8.0.aar\748c570ed48f1256283b7faece2383ad\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.8.0.aar\748c570ed48f1256283b7faece2383ad\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\58c5ba701bee04b5f241a54afb131bef\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\58c5ba701bee04b5f241a54afb131bef\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-storage-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.8.0.aar\6ac20d4c36b8ff2cb5f8e1bf883e59c2\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-storage-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.8.0.aar\6ac20d4c36b8ff2cb5f8e1bf883e59c2\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\35d590e67a8dc5b29cec411eeae11f68\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\35d590e67a8dc5b29cec411eeae11f68\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\e27574dfd37036a322f26e17b02c03e8\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\e27574dfd37036a322f26e17b02c03e8\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\f343a5104f1e59207b6e84c7fc528f03\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\f343a5104f1e59207b6e84c7fc528f03\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\9ce6ef2d358f59c1fe4f16ca7317da05\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\9ce6ef2d358f59c1fe4f16ca7317da05\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\8737558800a39d580970d5d5b5f18690\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\8737558800a39d580970d5d5b5f18690\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\1ddb300827d5f7ac3068a9ad81454d7f\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\1ddb300827d5f7ac3068a9ad81454d7f\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\83f981e9eb5c56d45bf8ac7d8694fb64\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\83f981e9eb5c56d45bf8ac7d8694fb64\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\69443b3bbc137d6a3eeb61d46f43e0d1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\69443b3bbc137d6a3eeb61d46f43e0d1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\94c18efec97ffb28ca3e63453187717d\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\94c18efec97ffb28ca3e63453187717d\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\01221c7f9d19539988f02f0329d7a3ac\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\01221c7f9d19539988f02f0329d7a3ac\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\60f76d2f2eb96271e4ac0817be0a4efa\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\60f76d2f2eb96271e4ac0817be0a4efa\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\abf0b72ef3038c17779e4574f15a24f2\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\abf0b72ef3038c17779e4574f15a24f2\AndroidManifest.xml:20:5-43
+MERGED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\e047947d4ea871c70dd92ce9c96c69a7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\e047947d4ea871c70dd92ce9c96c69a7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-storage:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-storage-0.6.2.aar\682ce17fb7c5765a5c9b8d905d50fc77\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-storage:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-storage-0.6.2.aar\682ce17fb7c5765a5c9b8d905d50fc77\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:8:5-10:41
+MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f2604008d0901a6fe8de8772021690ea\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f2604008d0901a6fe8de8772021690ea\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\c12fd74183ff9a3f9a5eed6f5cade0cc\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\c12fd74183ff9a3f9a5eed6f5cade0cc\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f7e9a62e5a64a71032b577e148da9a1c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f7e9a62e5a64a71032b577e148da9a1c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.hani-momanii:SuperNova-Emoji:1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\SuperNova-Emoji-1.0.aar\0e965d4b5bab61d23d01648ad3a6cfc7\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.hani-momanii:SuperNova-Emoji:1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\SuperNova-Emoji-1.0.aar\0e965d4b5bab61d23d01648ad3a6cfc7\AndroidManifest.xml:6:5-8:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.firebase:firebase-database:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-9.8.0.aar\5af06da4102dbd4ed4df799497f2b906\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-9.8.0.aar\5af06da4102dbd4ed4df799497f2b906\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\96adec336fc491954b43c40522520af3\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.8.0.aar\96adec336fc491954b43c40522520af3\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-storage:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.8.0.aar\dde290c5ab860353a8fb5750b9ee1553\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.8.0.aar\dde290c5ab860353a8fb5750b9ee1553\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.8.0.aar\2cebf157a816eb051f601cffa952a04a\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.8.0.aar\2cebf157a816eb051f601cffa952a04a\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\2829fa81c329f78b05a7410ec8796e1f\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-auth-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.8.0.aar\2829fa81c329f78b05a7410ec8796e1f\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-auth-module:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.8.0.aar\0e0196aab53d50bec72053ecada4a466\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-auth-module:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.8.0.aar\0e0196aab53d50bec72053ecada4a466\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.8.0.aar\9b6eab88fa8c6923fe359201f03cdca6\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.8.0.aar\9b6eab88fa8c6923fe359201f03cdca6\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\32e0172aa9f506b9b83f19524cb18b2d\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.8.0.aar\32e0172aa9f506b9b83f19524cb18b2d\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.8.0.aar\c6ab2b2e29497de03cd8c59ee9491387\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.8.0.aar\c6ab2b2e29497de03cd8c59ee9491387\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\f065c424a5c337df35ef712768058008\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\f065c424a5c337df35ef712768058008\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\25ecf9a732a014c6f94c1971346a4a74\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\customtabs-23.4.0.aar\25ecf9a732a014c6f94c1971346a4a74\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\b42054017453ace8d902e81902909957\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\b42054017453ace8d902e81902909957\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\0b425fe8b140a4e26949a8790721b1cf\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\0b425fe8b140a4e26949a8790721b1cf\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\9e404ff7166bea4bacca3cf19341dda0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\9e404ff7166bea4bacca3cf19341dda0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\98f9180ac587b22f50c514cf8deb8134\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\98f9180ac587b22f50c514cf8deb8134\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\34fdc9a641d4d3aca9007f8878cc9ecb\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.0.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\palette-v7-25.0.0.aar\34fdc9a641d4d3aca9007f8878cc9ecb\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\03bdb3057c44f568d62ac6b07e68daca\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\03bdb3057c44f568d62ac6b07e68daca\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\fb112abaa0cacb6f207af89356ff9e8f\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\fb112abaa0cacb6f207af89356ff9e8f\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\7855cdeb6653e372bd6fac38a7448a7a\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\7855cdeb6653e372bd6fac38a7448a7a\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\02a6b2801da9e0b3bab6fcc5eed3d293\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\02a6b2801da9e0b3bab6fcc5eed3d293\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\da111a535ab1b422e5ee526244c85bca\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\da111a535ab1b422e5ee526244c85bca\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\67bb5b57048ab52980f0c5832148532e\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\support-compat-25.1.0.aar\67bb5b57048ab52980f0c5832148532e\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\73cdc7fca9563c42c1850395e340e147\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\73cdc7fca9563c42c1850395e340e147\AndroidManifest.xml:20:5-43
 INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
 INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f766f0cdae0cccbc97c6d82d8d87ffae\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.1.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f2604008d0901a6fe8de8772021690ea\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
@@ -307,319 +291,191 @@ INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
 		ADDED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
 		INJECTED from D:\android-3D-model-viewer-master\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\5303bbd14cda93b360c603fadfea2850\AndroidManifest.xml:11:5-67
-MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:11:5-67
-MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:20:5-66
+ADDED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\e047947d4ea871c70dd92ce9c96c69a7\AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\5303bbd14cda93b360c603fadfea2850\AndroidManifest.xml:11:22-64
+		ADDED from [com.firebaseui:firebase-ui:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-0.6.2.aar\e047947d4ea871c70dd92ce9c96c69a7\AndroidManifest.xml:11:22-64
 meta-data#com.google.android.gms.version
-ADDED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:14:9-16:69
-MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:13:9-15:69
-MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:13:9-15:69
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\35d590e67a8dc5b29cec411eeae11f68\AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\35d590e67a8dc5b29cec411eeae11f68\AndroidManifest.xml:20:9-121
+ADDED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:14:9-16:69
+MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:13:9-15:69
+MERGED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:13:9-15:69
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\f065c424a5c337df35ef712768058008\AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.8.0.aar\f065c424a5c337df35ef712768058008\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:16:13-66
+		ADDED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:16:13-66
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\9d4b99988fae2afdc56e1eee0b83a45b\AndroidManifest.xml:15:13-58
+		ADDED from [com.firebaseui:firebase-ui-database:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-0.6.2.aar\5df5b1d4f6dab1884025ac7dacb71a08\AndroidManifest.xml:15:13-58
 activity#com.firebase.ui.auth.ui.email.ConfirmRecoverPasswordActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:17:9-20:56
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:17:9-20:56
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:19:13-76
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:19:13-76
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:20:13-53
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:20:13-53
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:18:13-88
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:18:13-88
 activity#com.firebase.ui.auth.ui.email.EmailHintContainerActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:21:9-24:61
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:21:9-24:61
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:23:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:23:13-58
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:24:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:24:13-58
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:22:13-84
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:22:13-84
 activity#com.firebase.ui.auth.ui.email.RecoverPasswordActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:25:9-28:49
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:25:9-28:49
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:27:13-68
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:27:13-68
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:28:13-46
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:28:13-46
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:26:13-81
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:26:13-81
 activity#com.firebase.ui.auth.ui.email.RegisterEmailActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:29:9-32:49
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:29:9-32:49
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:31:13-66
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:31:13-66
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:32:13-46
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:32:13-46
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:30:13-79
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:30:13-79
 activity#com.firebase.ui.auth.ui.email.SignInNoPasswordActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:33:9-36:49
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:33:9-36:49
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:35:13-71
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:35:13-71
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:36:13-46
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:36:13-46
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:34:13-82
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:34:13-82
 activity#com.firebase.ui.auth.ui.email.SignInActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:37:9-40:49
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:37:9-40:49
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:39:13-59
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:39:13-59
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:40:13-46
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:40:13-46
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:38:13-72
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:38:13-72
 activity#com.firebase.ui.auth.ui.account_link.SaveCredentialsActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:41:9-44:61
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:41:9-44:61
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:43:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:43:13-58
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:44:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:44:13-58
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:42:13-88
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:42:13-88
 activity#com.firebase.ui.auth.ui.account_link.WelcomeBackIDPPrompt
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:45:9-48:49
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:45:9-48:49
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:47:13-66
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:47:13-66
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:48:13-46
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:48:13-46
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:46:13-85
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:46:13-85
 activity#com.firebase.ui.auth.ui.account_link.WelcomeBackPasswordPrompt
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:49:9-52:49
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:49:9-52:49
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:51:13-71
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:51:13-71
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:52:13-46
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:52:13-46
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:50:13-90
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:50:13-90
 activity#com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:53:9-56:49
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:53:9-56:49
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:55:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:55:13-58
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:56:13-46
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:56:13-46
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:54:13-80
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:54:13-80
 activity#com.firebase.ui.auth.ui.idp.IDPSignInContainerActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:57:9-60:61
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:57:9-60:61
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:59:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:59:13-58
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:60:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:60:13-58
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:58:13-82
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:58:13-82
 activity#com.firebase.ui.auth.ui.ChooseAccountActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:61:9-64:61
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:61:9-64:61
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:63:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:63:13-58
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:64:13-58
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:64:13-58
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:62:13-73
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:62:13-73
 activity#com.facebook.FacebookActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:65:9-70:45
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:29:9-32:75
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:29:9-32:75
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:65:9-70:45
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:29:9-32:75
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:29:9-32:75
 	android:label
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:68:13-45
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:68:13-45
 	android:configChanges
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:67:13-96
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:67:13-96
 	android:theme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:69:13-58
-		REJECTED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:32:13-72
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:69:13-58
+		REJECTED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:32:13-72
 	tools:replace
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:70:13-42
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:70:13-42
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:66:13-57
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:66:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:71:9-82:20
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:33:9-36:20
-MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\7ca2ab857f655800a657d16576399de2\AndroidManifest.xml:33:9-36:20
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:71:9-82:20
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:33:9-36:20
+MERGED from [com.facebook.android:facebook-android-sdk:4.14.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.14.1.aar\a867b9fd832cbf5c14c1109f70062426\AndroidManifest.xml:33:9-36:20
 	android:exported
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:73:13-36
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:73:13-36
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:72:13-58
-intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:74:13-81:29
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:72:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/facebook_login_protocol_scheme
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:74:13-81:29
 action#android.intent.action.VIEW
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:75:17-69
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:75:17-69
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:75:25-66
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:75:25-66
 category#android.intent.category.DEFAULT
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:77:17-76
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:77:17-76
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:77:27-73
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:77:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:78:17-78
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:78:17-78
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:78:27-75
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:78:27-75
 data
-ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:80:17-81
+ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:80:17-81
 	android:scheme
-		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\d66f0b7af1e895b39b7d252729ec50b8\AndroidManifest.xml:80:23-78
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:19:5-78
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:19:5-78
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:21:22-76
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:21:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:22:22-65
-receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:25:7-26:18
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:25:90-112
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:25:113-137
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:25:17-89
-receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:27:7-31:18
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:27:162-184
-	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:27:105-161
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:27:17-104
-intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:28:11-30:27
-action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:29:15-76
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:29:23-74
-service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:27:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.6.1.aar\5d79f34a51cbac952b6bdb12b8583d22\AndroidManifest.xml:27:7-137
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:32:88-110
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:32:111-135
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.6.1.aar\cfefe4c88ba51916671c76a92f520807\AndroidManifest.xml:32:16-87
+		ADDED from [com.firebaseui:firebase-ui-auth:0.6.2] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-0.6.2.aar\884f68230ab872a297820e0ad6553765\AndroidManifest.xml:80:23-78
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:20:9-189
+ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:20:129-162
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:20:129-162
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:20:163-187
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:20:163-187
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:20:69-128
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:20:69-128
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:20:19-68
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:20:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:24:9-184
+ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:24:9-184
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:24:64-87
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:24:64-87
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:24:88-182
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:24:88-182
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\afb3b765ac488e2d551c610efc150487\AndroidManifest.xml:24:18-63
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:19:9-172
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:19:146-170
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:19:86-145
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\67059d125d603139337711f8eeab7ea9\AndroidManifest.xml:19:19-85
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:22:5-81
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:22:22-79
-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:24:5-109
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:24:72-107
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:24:17-71
-permission#org.orego.app.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:24:5-109
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:24:72-107
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:24:17-71
-uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:26:5-78
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:26:22-76
-uses-permission#org.orego.app.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:26:5-78
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:26:22-76
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:30:9-36:20
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:30:85-108
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:30:109-169
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:30:19-84
-intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:31:13-35:29
-intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+org.orego.app
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:31:13-35:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:32:17-80
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:32:25-78
-action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:33:17-85
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:33:25-83
-category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:34:17-60
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:34:27-58
-category#org.orego.app
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:34:17-60
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:34:27-58
-receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:40:9-119
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:40:93-117
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:40:19-92
-service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:44:9-48:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:44:83-106
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:44:18-82
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:45:13-47:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:45:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:46:17-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.6.1.aar\2465288d0acd420778684519f0a3462c\AndroidManifest.xml:46:25-77
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.8.0.aar\be799a9e124cc168d51d412876a8fbff\AndroidManifest.xml:24:18-63
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:6:9-175
+ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:6:9-175
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:6:125-149
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:6:125-149
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:6:150-173
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:6:150-173
 	android:name
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\8db9b5733ac29c751d93e8fff126aed4\AndroidManifest.xml:6:79-124
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\firebase-common-9.8.0.aar\33360f8e9edf31764065d7780af0fb9b\AndroidManifest.xml:6:79-124
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\ilyad\.gradle\caches\transforms-1\files-1.1\play-services-base-9.8.0.aar\037d48f9dbab79cd8174a0bd8ccc6090\AndroidManifest.xml:19:19-85
