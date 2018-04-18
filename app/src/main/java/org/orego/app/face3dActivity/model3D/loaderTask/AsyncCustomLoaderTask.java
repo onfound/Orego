@@ -3,7 +3,6 @@ package org.orego.app.face3dActivity.model3D.loaderTask;
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import org.orego.app.face3dActivity.model3D.controller.TouchController;
 import org.orego.app.face3dActivity.model3D.portrait.headComposition.HeadComposition;
@@ -26,6 +25,8 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, HeadCo
 
     private TouchController touchController;
 
+    private ModelSurfaceView modelSurfaceView;
+
     private HeadComposition headComposition = null;
 
     public AsyncCustomLoaderTask(final ModelActivity parent
@@ -33,9 +34,9 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, HeadCo
         this.parent = parent;
         this.modelId = parent.getParamAssetFilename();
         this.dialog = new ProgressDialog(parent, 2);
+        this.modelSurfaceView = modelSurfaceView;
         modelSurfaceView.setTouchHandler(new TouchController(modelSurfaceView));
         this.touchController = modelSurfaceView.getTouchHandler();
-        this.touchController.installHeadComposition(headComposition);
     }
 
 
@@ -52,34 +53,26 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, HeadCo
         return build();
     }
 
-    private void closeStream(final InputStream stream) {
-        if (stream != null) {
-            try {
-                stream.close();
-            } catch (IOException ex) {
-                Log.e("AsyncCustomLoaderTask", "Problem closing stream: " + ex.getMessage(), ex);
-            }
-        }
-    }
-
     private HeadComposition build() {
+        publishProgress(0);
         try {
             final InputStream inputStreamFace = parent.getAssets().open("faces/"
                     + modelId);
             final InputStream inputStramHead = parent.getAssets().open("faces/head.obj");
 
             final InputStream inputStreamVertexShader = parent.getAssets()
-                    .open("shaderFile/vertex.shader");
+                    .open("shaderFiles/vertex.shader");
             final InputStream inputStreamFragmentShader = parent.getAssets()
-                    .open("shaderFile/fragment.shader");
-            return new HeadComposition(inputStramHead, inputStreamFace
+                    .open("shaderFiles/fragment.shader");
+            System.out.println("!");
+            headComposition = new HeadComposition(inputStramHead, inputStreamFace
                     , inputStreamVertexShader, inputStreamFragmentShader);
+            modelSurfaceView.getModelRender().installHeadComposition(headComposition);
+            return headComposition;
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return null;
-
     }
 
     @Override

@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 
 import org.orego.app.face3dActivity.model3D.controller.TouchController;
 import org.orego.app.face3dActivity.model3D.loaderTask.AsyncCustomLoaderTask;
+import org.orego.app.face3dActivity.model3D.modelRender.ModelRender;
 import org.orego.app.face3dActivity.model3D.portrait.headComposition.HeadComposition;
 
 import java.util.List;
@@ -16,27 +17,36 @@ import java.util.List;
 public final class ModelSurfaceView extends GLSurfaceView {
 
 
-	private TouchController touchHandler;
+    private TouchController touchHandler;
 
-	public ModelSurfaceView(ModelActivity parent) {
-		super(parent);
-		setEGLContextClientVersion(3);
-		final AsyncTask<Void, Integer, HeadComposition> asyncLoaderTask
-				= new AsyncCustomLoaderTask(parent, this);
-		asyncLoaderTask.execute();
-	}
+    private ModelRender modelRender;
 
-	@SuppressLint("ClickableViewAccessibility")
-	@Override
-	public boolean onTouchEvent(MotionEvent event) {
-		return touchHandler.onTouchEvent(event);
-	}
+    public ModelSurfaceView(final ModelActivity parent) {
+        super(parent);
+        setEGLContextClientVersion(3);
+        super.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
+        modelRender = new ModelRender();
+        setRenderer(modelRender);
+        final AsyncTask<Void, Integer, HeadComposition> asyncLoaderTask
+                = new AsyncCustomLoaderTask(parent, this);
+        asyncLoaderTask.execute();
+    }
 
-	public TouchController getTouchHandler() {
-		return touchHandler;
-	}
+    @SuppressLint("ClickableViewAccessibility")
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return touchHandler.onTouchEvent(event);
+    }
 
-	public void setTouchHandler(TouchController touchHandler) {
-		this.touchHandler = touchHandler;
-	}
+    public TouchController getTouchHandler() {
+        return touchHandler;
+    }
+
+    public void setTouchHandler(TouchController touchHandler) {
+        this.touchHandler = touchHandler;
+    }
+
+    public ModelRender getModelRender() {
+        return modelRender;
+    }
 }

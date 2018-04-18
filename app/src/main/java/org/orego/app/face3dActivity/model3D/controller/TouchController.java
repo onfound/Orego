@@ -1,5 +1,6 @@
 package org.orego.app.face3dActivity.model3D.controller;
 
+import org.orego.app.face3dActivity.model3D.modelRender.ModelRender;
 import org.orego.app.face3dActivity.model3D.portrait.headComposition.HeadComposition;
 import org.orego.app.face3dActivity.model3D.view.ModelSurfaceView;
 
@@ -14,7 +15,7 @@ public class TouchController {
 
     private static final float FAR = 100f;
     private final ModelSurfaceView view;
-    private HeadComposition mRenderer;
+    private ModelRender mRenderer;
 
     private float x1 = Float.MIN_VALUE;
     private float y1 = Float.MIN_VALUE;
@@ -47,6 +48,7 @@ public class TouchController {
     public TouchController(ModelSurfaceView view) {
         super();
         this.view = view;
+        mRenderer = view.getModelRender();
     }
 
     public synchronized boolean onTouchEvent(MotionEvent motionEvent) {
@@ -116,25 +118,25 @@ public class TouchController {
         }
 
         int max = Math.max(mRenderer.getWidth(), mRenderer.getHeight());
-        if (touchDelay > 1) {
-            if (pointerCount != 1 || currentPress1 <= 4.0f) {
-                if (pointerCount == 1) {
-                    dx1 = (float) (dx1 / max * Math.PI * 2);
-                    dy1 = (float) (dy1 / max * Math.PI * 2);
-                    mRenderer.getCamera().translateCamera(dx1, dy1);
-                } else if (pointerCount == 2) {
-                    if (fingersAreClosing) {
-                        float zoomFactor = (length - previousLength) / max * FAR;
-                        Log.i(TAG, "Zooming '" + zoomFactor + "'...");
-                        mRenderer.getCamera().MoveCameraZ(zoomFactor);
-                    }
-                    if (isRotating) {
-                        Log.i(TAG, "Rotating camera '" + Math.signum(rotationVector[2]) + "'...");
-                        mRenderer.getCamera().Rotate((float) (Math.signum(rotationVector[2]) / Math.PI) / 4);
-                    }
-                }
-            }
-        }
+//        if (touchDelay > 1) {
+//            if (pointerCount != 1 || currentPress1 <= 4.0f) {
+//                if (pointerCount == 1) {
+//                    dx1 = (float) (dx1 / max * Math.PI * 2);
+//                    dy1 = (float) (dy1 / max * Math.PI * 2);
+//                    mRenderer.getCamera().translateCamera(dx1, dy1);
+//                } else if (pointerCount == 2) {
+//                    if (fingersAreClosing) {
+//                        float zoomFactor = (length - previousLength) / max * FAR;
+//                        Log.i(TAG, "Zooming '" + zoomFactor + "'...");
+//                        mRenderer.getCamera().MoveCameraZ(zoomFactor);
+//                    }
+//                    if (isRotating) {
+//                        Log.i(TAG, "Rotating camera '" + Math.signum(rotationVector[2]) + "'...");
+//                        mRenderer.getCamera().Rotate((float) (Math.signum(rotationVector[2]) / Math.PI) / 4);
+//                    }
+//                }
+//            }
+//        }
 
         previousX1 = x1;
         previousY1 = y1;
@@ -153,11 +155,5 @@ public class TouchController {
 
         return true;
 
-    }
-
-    public final void installHeadComposition(final HeadComposition headComposition) {
-        if (mRenderer == null) {
-            this.mRenderer = headComposition;
-        }
     }
 }

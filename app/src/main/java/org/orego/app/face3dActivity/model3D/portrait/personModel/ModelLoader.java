@@ -32,6 +32,7 @@ final class ModelLoader {
     final void load() {
         int lineNum = 0;
         if (!isLoaded) {
+            long time = System.currentTimeMillis();
             vertexBufferObject = createNativeByteBuffer(BUFFER_CAPACITY).asFloatBuffer();
             elementBufferObject = createNativeByteBuffer(BUFFER_CAPACITY).asIntBuffer();
             String line;
@@ -44,7 +45,8 @@ final class ModelLoader {
                         if (line.startsWith("v ")) {
                             float x, y, z, r, g, b;
                             try {
-                                final String[] tokens = line.split(" ");
+                                final String[] tokens = line.split(" +");
+
                                 x = Float.parseFloat(tokens[1]);
                                 y = Float.parseFloat(tokens[2]);
                                 z = Float.parseFloat(tokens[3]);
@@ -54,7 +56,8 @@ final class ModelLoader {
                                     g = Float.parseFloat(tokens[5]);
                                     b = Float.parseFloat(tokens[6]);
                                     vertexBufferObject.put(r).put(g).put(b);
-                                }
+                                }else
+                                    vertexBufferObject.put(0.45f).put(0.38f).put(0.31f);
                                 numVerts++;
                             } catch (final NumberFormatException ex) {
                                 System.out.println("ErrParseLine1: " + lineNum);
@@ -63,7 +66,7 @@ final class ModelLoader {
                         } else if (line.startsWith("f ")) {
                             int v1Indx, v2Indx, v3Indx;
                             try {
-                                final String[] tokens = line.split(" ");
+                                final String[] tokens = line.split(" +");
                                 if (tokens[1].split("/").length > 1) {
                                     tokens[1] = tokens[1].split("/")[0];
                                     tokens[2] = tokens[2].split("/")[0];
@@ -80,8 +83,7 @@ final class ModelLoader {
                             }
                         } else if (line.startsWith("mtllib ")) {
                             materials = new Materials(line.substring(7));
-                        } else
-                            System.out.println("Ignoring line " + lineNum + " : " + line);
+                        }
                     }
                 }
             } catch (IOException e) {
@@ -96,6 +98,7 @@ final class ModelLoader {
                     }
                 }
             }
+            System.out.println("Time = " + (System.currentTimeMillis() - time));
             System.out.println("Number of vertices:" + numVerts);
             System.out.println("Number of faces:" + numFaces);
 
@@ -122,10 +125,10 @@ final class ModelLoader {
     }
 
     final int getVertexBufferSize() {
-        return numVerts * 3 * 4;
+        return numVerts;
     }
 
     final int getElementBufferSize() {
-        return numFaces * 3 * 4;
+        return numFaces;
     }
 }

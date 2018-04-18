@@ -14,7 +14,7 @@ public final class ModelActivity extends Activity {
 
     @SuppressLint("ResourceAsColor")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected final void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Try to get input parameters
@@ -23,8 +23,7 @@ public final class ModelActivity extends Activity {
             this.paramAssetDir = b.getString("assetDir");
             this.paramAssetFilename = b.getString("assetFilename");
         }
-
-        gLView = new ModelSurfaceView(this);
+        this.gLView = new ModelSurfaceView(this);
         setContentView(gLView);
     }
 
