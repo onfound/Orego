@@ -20,7 +20,7 @@ public class Handler extends URLStreamHandler {
 	}
 
 	@Override
-	protected URLConnection openConnection(final URL url) throws IOException {
+	protected URLConnection openConnection(final URL url) {
 		return new ClasspathURLConnection(url);
 	}
 

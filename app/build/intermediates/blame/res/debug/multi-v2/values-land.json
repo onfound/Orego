@@ -4,7 +4,7 @@
             "outputFile": "D:\\android-3D-model-viewer-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\87123dc693e6be952c5359a5ff3ecfe0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\c12fd74183ff9a3f9a5eed6f5cade0cc\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f766f0cdae0cccbc97c6d82d8d87ffae\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f2604008d0901a6fe8de8772021690ea\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

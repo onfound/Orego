@@ -4,24 +4,7 @@
             "outputFile": "D:\\android-3D-model-viewer-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-9.8.0.aar\\35d590e67a8dc5b29cec411eeae11f68\\res\\values-lo\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "190",
-                        "endOffsets": "475"
-                    },
-                    "to": {
-                        "startLines": "9",
-                        "startColumns": "4",
-                        "startOffsets": "1141",
-                        "endColumns": "190",
-                        "endOffsets": "1327"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.8.0.aar\\67059d125d603139337711f8eeab7ea9\\res\\values-lo\\values.xml",
+                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.8.0.aar\\037d48f9dbab79cd8174a0bd8ccc6090\\res\\values-lo\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -35,6 +18,23 @@
                         "startOffsets": "105,215,417,549,658,869,996,1332,1543,1650,1847,1978,2208,2399,2497,2596",
                         "endColumns": "109,201,131,108,210,126,144,210,106,196,130,229,190,97,98,113",
                         "endOffsets": "210,412,544,653,864,991,1136,1538,1645,1842,1973,2203,2394,2492,2591,2705"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ilyad\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-9.8.0.aar\\f065c424a5c337df35ef712768058008\\res\\values-lo\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "190",
+                        "endOffsets": "475"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "1141",
+                        "endColumns": "190",
+                        "endOffsets": "1327"
                     }
                 }
             ]

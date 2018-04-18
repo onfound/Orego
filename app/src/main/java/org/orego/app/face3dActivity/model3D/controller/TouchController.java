@@ -1,7 +1,9 @@
 package org.orego.app.face3dActivity.model3D.controller;
 
-import org.orego.app.face3dActivity.model3D.view.ModelRenderer;
+import org.orego.app.face3dActivity.model3D.portrait.headComposition.HeadComposition;
 import org.orego.app.face3dActivity.model3D.view.ModelSurfaceView;
+
+import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -10,8 +12,9 @@ public class TouchController {
 
     private static final String TAG = TouchController.class.getName();
 
+    private static final float FAR = 100f;
     private final ModelSurfaceView view;
-    private final ModelRenderer mRenderer;
+    private HeadComposition mRenderer;
 
     private float x1 = Float.MIN_VALUE;
     private float y1 = Float.MIN_VALUE;
@@ -41,10 +44,9 @@ public class TouchController {
     private float[] rotationVector = new float[4];
 
 
-    public TouchController(ModelSurfaceView view, ModelRenderer renderer) {
+    public TouchController(ModelSurfaceView view) {
         super();
         this.view = view;
-        this.mRenderer = renderer;
     }
 
     public synchronized boolean onTouchEvent(MotionEvent motionEvent) {
@@ -53,7 +55,6 @@ public class TouchController {
                 touchDelay++;
                 break;
             default:
-                Log.w(TAG, "Unknown state: " + motionEvent.getAction());
                 gestureChanged = true;
         }
 
@@ -63,7 +64,7 @@ public class TouchController {
             x1 = motionEvent.getX();
             y1 = motionEvent.getY();
             if (gestureChanged) {
-                Log.d(TAG, "x:" + x1 + ",y:" + y1);
+
                 previousX1 = x1;
                 previousY1 = y1;
             }
@@ -123,7 +124,7 @@ public class TouchController {
                     mRenderer.getCamera().translateCamera(dx1, dy1);
                 } else if (pointerCount == 2) {
                     if (fingersAreClosing) {
-                        float zoomFactor = (length - previousLength) / max * mRenderer.getFar();
+                        float zoomFactor = (length - previousLength) / max * FAR;
                         Log.i(TAG, "Zooming '" + zoomFactor + "'...");
                         mRenderer.getCamera().MoveCameraZ(zoomFactor);
                     }
@@ -152,5 +153,11 @@ public class TouchController {
 
         return true;
 
+    }
+
+    public final void installHeadComposition(final HeadComposition headComposition) {
+        if (mRenderer == null) {
+            this.mRenderer = headComposition;
+        }
     }
 }

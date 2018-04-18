@@ -36,7 +36,7 @@ public class DemoActivity extends ListActivity {
 		AssetManager assets = getApplicationContext().getAssets();
 		String[] models;
 		try {
-			models = assets.list("models");
+			models = assets.list("faces");
 		} catch (IOException ex) {
 			Toast.makeText(getApplicationContext(), ex.getMessage(), Toast.LENGTH_LONG).show();
 			return;
@@ -45,10 +45,9 @@ public class DemoActivity extends ListActivity {
 		// add 1 entryLine per model found
 		rowItems = new ArrayList<>();
 		for (String model : models) {
-			if (model.toLowerCase().endsWith(".obj") || model.toLowerCase().endsWith(".stl") ||
-					model.toLowerCase().endsWith(".dae")) {
+			if (model.toLowerCase().endsWith(".obj")) {
 				objModels.add(model);
-				RowItem item = new RowItem("models/" + model, model, "models/" + model + ".jpg");
+				RowItem item = new RowItem("faces/" + model, model, "faces/" + model + ".jpg");
 				rowItems.add(item);
 			}
 		}
@@ -59,10 +58,10 @@ public class DemoActivity extends ListActivity {
 	private void loadDemo(final String selectedItem) {
 		Intent intent = new Intent(DemoActivity.this.getApplicationContext(), ModelActivity.class);
 		Bundle b = new Bundle();
-		b.putString("assetDir", "models");
+		b.putString("assetDir", "faces");
 		b.putString("assetFilename", selectedItem);
 		b.putString("immersiveMode", "true");
-		b.putStringArrayList("models", objModels);
+		b.putStringArrayList("faces", objModels);
 		intent.putExtras(b);
 		DemoActivity.this.startActivity(intent);
 	}
