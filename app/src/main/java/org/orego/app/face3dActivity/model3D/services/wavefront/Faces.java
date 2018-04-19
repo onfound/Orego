@@ -6,15 +6,15 @@ import java.nio.IntBuffer;
 import java.util.ArrayList;
 
 /**
- * Created by ilyad on 03.04.2018.
+ * Created by ilya dolgushev on 03.04.2018.
  *
  */
 
 public final class Faces {
 
-    final int totalFaces;
+    private final int totalFaces;
 
-    IntBuffer facesVertIdxs;
+    private IntBuffer facesVertIdxs;
 
     public ArrayList<int[]> facesTexIdxs;
 
@@ -34,7 +34,7 @@ public final class Faces {
         facesVertIdxs = buffer;
         facesTexIdxs = new ArrayList<>();
         facesNormIdxs = new ArrayList<>();
-    } // end of Faces()
+    }
 
     public int getSize() {
         return totalFaces;
@@ -93,10 +93,6 @@ public final class Faces {
                 // the token
 
                 int vertIdx = Integer.parseInt(faceTokens[0]);
-					/*if (vertIdx > 65535){
-						Log.e("WavefrontLoader","Ignoring face because its out of range (>65535)");
-						continue;
-					}*/
                 if (numSeps > 1) {
                     if (vt == null) vt = new int[3];
                     try {

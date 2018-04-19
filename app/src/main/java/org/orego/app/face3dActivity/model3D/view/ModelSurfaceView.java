@@ -17,7 +17,7 @@ public final class ModelSurfaceView extends GLSurfaceView {
 		super(parent);
 		this.parent = parent;
 		setEGLContextClientVersion(2);
-		ModelRenderer mRenderer = new ModelRenderer(this);
+		ModelRenderer mRenderer = new ModelRenderer(this, parent);
 		setRenderer(mRenderer);
 		touchHandler = new TouchController(this, mRenderer);
 	}

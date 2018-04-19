@@ -16,7 +16,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -116,8 +115,8 @@ public final class AsyncCustomLoaderTask extends AsyncTask<Void, Integer, List<O
         wfl.reportOnModel(); //sout report model
 
         // create the 3D object
-        Object3DData data3D = new Object3DData(wfl.getVerts(), wfl.getColorsVert()
-                , wfl.getColorPerVerts(), wfl.getNormals(), wfl.getTextureCoordinates()
+        Object3DData data3D = new Object3DData(wfl.getVerts(), wfl.getColorsVert(), wfl.getColorsVertA()
+                , wfl.getNormals(), wfl.getTextureCoordinates()
                 , wfl.getFaces(), wfl.getFaceMats(), wfl.getMaterials());
         data3D.setId(modelId); //помещаем в класс хранения хранения названия модели
         data3D.setCurrentDir(currentDirectory); // храним также текущую директорию
