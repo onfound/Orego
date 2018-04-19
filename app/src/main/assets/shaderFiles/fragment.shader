@@ -1,7 +1,5 @@
-#version 330 core
-in vec3 ourColor;
-out vec4 color;
-void main()
-{
-color = vec4(ourColor, 1.0f);
+precision mediump float;
+varying vec4 v_Color;
+void main() {
+  gl_FragColor = v_Color;
 }

@@ -3,6 +3,7 @@ package org.orego.app.face3dActivity.model3D.portrait.personModel;
 import org.orego.app.face3dActivity.model3D.portrait.materials.Materials;
 import org.orego.app.face3dActivity.model3D.portrait.personModel.exceptions.NotLoadedBufferException;
 import org.orego.app.face3dActivity.model3D.portrait.personModel.exceptions.NotLoadedMaterialsException;
+import org.orego.app.face3dActivity.util.tuple.Tuple;
 
 import java.io.InputStream;
 import java.nio.Buffer;
@@ -57,12 +58,20 @@ public abstract class PersonPart {
    public abstract String getName();
 
     /**
-     * @return возвращает float буфер вершин;
+     * @return возвращает int буфер вершин;
      * @throws NotLoadedBufferException
      */
 
     public final IntBuffer getElementBufferObject() throws NotLoadedBufferException{
         final IntBuffer buffer = modelLoader.getElementBufferObject();
+        if (buffer != null){
+            return buffer;
+        } else {
+            throw new NotLoadedBufferException("Not loaded" + getName() + "element buffer object");
+        }
+    }
+    public final FloatBuffer getColorPerVertexObject() throws NotLoadedBufferException{
+        final FloatBuffer buffer = modelLoader.getColorPerVertex();
         if (buffer != null){
             return buffer;
         } else {
@@ -101,6 +110,9 @@ public abstract class PersonPart {
         this.isBinded = binded;
     }
 
+    public ModelDimensions getDimension(){
+        return modelLoader.getDimension();
+    }
 
     public final int getVertexBufferSize(){
         return modelLoader.getVertexBufferSize();

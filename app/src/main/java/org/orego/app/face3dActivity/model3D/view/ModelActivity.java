@@ -7,8 +7,6 @@ import android.os.Bundle;
 
 public final class ModelActivity extends Activity {
 
-    private String paramAssetDir; // faces
-    private String paramAssetFilename; // modelId
     private ModelSurfaceView gLView;
 
 
@@ -16,24 +14,18 @@ public final class ModelActivity extends Activity {
     @Override
     protected final void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Try to get input parameters
-        final Bundle b = getIntent().getExtras();
-        if (b != null) {
-            this.paramAssetDir = b.getString("assetDir");
-            this.paramAssetFilename = b.getString("assetFilename");
-        }
         this.gLView = new ModelSurfaceView(this);
         setContentView(gLView);
     }
-
-
-    public String getParamAssetDir() {
-        return paramAssetDir;
+    @Override
+    protected void onPause() {
+        super.onPause();
+        gLView.onPause();
     }
-
-    public String getParamAssetFilename() {
-        return paramAssetFilename;
+    @Override
+    protected void onResume() {
+        super.onResume();
+        gLView.onResume();
     }
 
     public ModelSurfaceView getgLView() {

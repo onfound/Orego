@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-storage-9.8.0">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-9.8.0.aar/7b1e584172ea96b132d91768ec81271a/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-9.8.0.aar/7b1e584172ea96b132d91768ec81271a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-9.8.0.aar/dde290c5ab860353a8fb5750b9ee1553/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-storage-9.8.0.aar/dde290c5ab860353a8fb5750b9ee1553/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

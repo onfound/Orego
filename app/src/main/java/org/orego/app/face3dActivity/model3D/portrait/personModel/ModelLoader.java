@@ -2,6 +2,7 @@ package org.orego.app.face3dActivity.model3D.portrait.personModel;
 
 
 import org.orego.app.face3dActivity.model3D.portrait.materials.Materials;
+import org.orego.app.face3dActivity.util.tuple.Tuple;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +11,7 @@ import java.io.InputStreamReader;
 import java.nio.*;
 
 final class ModelLoader {
-    private static final int BUFFER_CAPACITY = Integer.MAX_VALUE / 128;
+    private static final int BUFFER_CAPACITY = Integer.MAX_VALUE / 512;
 
     private final InputStream is;
 
@@ -18,6 +19,9 @@ final class ModelLoader {
 
     private FloatBuffer vertexBufferObject;
     private IntBuffer elementBufferObject;
+    private FloatBuffer colorPerVertexObject;
+
+    private ModelDimensions modelDimension;
 
     private Materials materials;
 
@@ -35,6 +39,9 @@ final class ModelLoader {
             long time = System.currentTimeMillis();
             vertexBufferObject = createNativeByteBuffer(BUFFER_CAPACITY).asFloatBuffer();
             elementBufferObject = createNativeByteBuffer(BUFFER_CAPACITY).asIntBuffer();
+            colorPerVertexObject = createNativeByteBuffer(BUFFER_CAPACITY).asFloatBuffer();
+            modelDimension = new ModelDimensions();
+            boolean isFirst = true;
             String line;
             BufferedReader br = null;
             try {
@@ -50,14 +57,19 @@ final class ModelLoader {
                                 x = Float.parseFloat(tokens[1]);
                                 y = Float.parseFloat(tokens[2]);
                                 z = Float.parseFloat(tokens[3]);
+                                if (isFirst){
+                                    modelDimension.set(x,y,z);
+                                    isFirst = false;
+                                }
+                                else modelDimension.update(x,y,z);
                                 vertexBufferObject.put(x).put(y).put(z);
                                 if (tokens.length > 4) {
                                     r = Float.parseFloat(tokens[4]);
                                     g = Float.parseFloat(tokens[5]);
                                     b = Float.parseFloat(tokens[6]);
-                                    vertexBufferObject.put(r).put(g).put(b);
-                                }else
-                                    vertexBufferObject.put(0.45f).put(0.38f).put(0.31f);
+                                    colorPerVertexObject.put(r).put(g).put(b);
+                                } else
+                                    colorPerVertexObject.put(0.45f).put(0.38f).put(0.31f);
                                 numVerts++;
                             } catch (final NumberFormatException ex) {
                                 System.out.println("ErrParseLine1: " + lineNum);
@@ -120,6 +132,10 @@ final class ModelLoader {
         return isLoaded ? elementBufferObject : null;
     }
 
+    final FloatBuffer getColorPerVertex() {
+        return isLoaded ? colorPerVertexObject : null;
+    }
+
     final Materials getMaterials() {
         return isLoaded ? materials : null;
     }
@@ -130,5 +146,9 @@ final class ModelLoader {
 
     final int getElementBufferSize() {
         return numFaces;
+    }
+
+    public ModelDimensions getDimension() {
+        return modelDimension;
     }
 }

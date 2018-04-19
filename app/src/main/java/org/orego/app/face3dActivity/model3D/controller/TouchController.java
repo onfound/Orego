@@ -45,10 +45,10 @@ public class TouchController {
     private float[] rotationVector = new float[4];
 
 
-    public TouchController(ModelSurfaceView view) {
+    public TouchController(ModelSurfaceView view, ModelRender mRenderer) {
         super();
         this.view = view;
-        mRenderer = view.getModelRender();
+        this.mRenderer = mRenderer;
     }
 
     public synchronized boolean onTouchEvent(MotionEvent motionEvent) {
@@ -118,26 +118,26 @@ public class TouchController {
         }
 
         int max = Math.max(mRenderer.getWidth(), mRenderer.getHeight());
-//        if (touchDelay > 1) {
-//            if (pointerCount != 1 || currentPress1 <= 4.0f) {
-//                if (pointerCount == 1) {
-//                    dx1 = (float) (dx1 / max * Math.PI * 2);
-//                    dy1 = (float) (dy1 / max * Math.PI * 2);
-//                    mRenderer.getCamera().translateCamera(dx1, dy1);
-//                } else if (pointerCount == 2) {
-//                    if (fingersAreClosing) {
-//                        float zoomFactor = (length - previousLength) / max * FAR;
-//                        Log.i(TAG, "Zooming '" + zoomFactor + "'...");
-//                        mRenderer.getCamera().MoveCameraZ(zoomFactor);
-//                    }
-//                    if (isRotating) {
-//                        Log.i(TAG, "Rotating camera '" + Math.signum(rotationVector[2]) + "'...");
-//                        mRenderer.getCamera().Rotate((float) (Math.signum(rotationVector[2]) / Math.PI) / 4);
-//                    }
-//                }
-//            }
-//        }
-
+        if (touchDelay > 1) {
+            if (pointerCount != 1 || currentPress1 <= 4.0f) {
+                if (pointerCount == 1) {
+                    dx1 = (float) (dx1 / max * Math.PI * 2);
+                    dy1 = (float) (dy1 / max * Math.PI * 2);
+                    mRenderer.getCamera().translateCamera(dx1, dy1);
+                } else if (pointerCount == 2) {
+                    if (fingersAreClosing) {
+                        float zoomFactor = (length - previousLength) / max * FAR;
+                        Log.i(TAG, "Zooming '" + zoomFactor + "'...");
+                        mRenderer.getCamera().MoveCameraZ(zoomFactor);
+                    }
+                    if (isRotating) {
+                        Log.i(TAG, "Rotating camera '" + Math.signum(rotationVector[2]) + "'...");
+                        mRenderer.getCamera().Rotate((float) (Math.signum(rotationVector[2]) / Math.PI) / 4);
+                    }
+                }
+            }
+        }
+//
         previousX1 = x1;
         previousY1 = y1;
         previousX2 = x2;

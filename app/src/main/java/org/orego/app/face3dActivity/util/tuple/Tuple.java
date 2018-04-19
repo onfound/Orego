@@ -32,5 +32,17 @@ public final class Tuple<X, Y, Z> {
     public final Z getZ() {
         return z;
     }
+
+    public void setX(X x) {
+        this.x = x;
+    }
+
+    public void setY(Y y) {
+        this.y = y;
+    }
+
+    public void setZ(Z z) {
+        this.z = z;
+    }
 }
 
